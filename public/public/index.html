@@ -1,26 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-      <link rel="icon" type="image/png" href="bomberman.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
-    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all">
-
-    <title>Jason Buoni</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script src="./js/bundle.js"></script>
-  <script type="text/javascript" src="../js/bundle.js"></script></body>
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ./node_modules/html-loader/index.js):
+  Error: ENOENT: no such file or directory, open '/Users/jbuoni/Desktop/portfolio/public/index.html':
+  Error: ENOENT: no such file or directory, open '/Users/jbuoni/Desktop/portfolio/public/index.html'
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [portfolio]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:306 compile
+    [portfolio]/[webpack]/lib/Compiler.js:306:11
+  
+  - Compiler.js:631 hooks.afterCompile.callAsync.err
+    [portfolio]/[webpack]/lib/Compiler.js:631:15
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [portfolio]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:628 compilation.seal.err
+    [portfolio]/[webpack]/lib/Compiler.js:628:31
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [portfolio]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1325 hooks.optimizeAssets.callAsync.err
+    [portfolio]/[webpack]/lib/Compilation.js:1325:35
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [portfolio]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1316 hooks.optimizeChunkAssets.callAsync.err
+    [portfolio]/[webpack]/lib/Compilation.js:1316:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [portfolio]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1311 hooks.additionalAssets.callAsync.err
+    [portfolio]/[webpack]/lib/Compilation.js:1311:36
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [portfolio]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1307 hooks.optimizeTree.callAsync.err
+    [portfolio]/[webpack]/lib/Compilation.js:1307:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [portfolio]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1244 Compilation.seal
+    [portfolio]/[webpack]/lib/Compilation.js:1244:27
+  
+  - Compiler.js:625 compilation.finish.err
+    [portfolio]/[webpack]/lib/Compiler.js:625:18
+  
+  - Compilation.js:1167 hooks.finishModules.callAsync.err
+    [portfolio]/[webpack]/lib/Compilation.js:1167:4
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [portfolio]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1159 Compilation.finish
+    [portfolio]/[webpack]/lib/Compilation.js:1159:28
+  
+  - Compiler.js:622 hooks.make.callAsync.err
+    [portfolio]/[webpack]/lib/Compiler.js:622:17
+  
+  
+  - Compilation.js:1091 _addModuleChain
+    [portfolio]/[webpack]/lib/Compilation.js:1091:12
+  
+  - Compilation.js:1003 processModuleDependencies.err
+    [portfolio]/[webpack]/lib/Compilation.js:1003:9
+  
+</pre><script type="text/javascript" src="../js/bundle.js"></script>
