@@ -37,7 +37,7 @@ export default class NavigationBar extends Component {
                             <Link to="/algo" >Algorithms</Link>
                         </span>
                         <span className="nav nav-link">
-                            <Link to="/exp" >Experience / Projects</Link>
+                            <Link to="/proj" >Projects</Link>
                         </span>
                         <span className="nav nav-link" onClick={this.onHackerRankClick}>HackerRank</span>
                         <span className="nav nav-link" onClick={this.onResumeClick}>Resume</span>
