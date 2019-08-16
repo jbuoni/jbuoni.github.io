@@ -1,21 +1,6 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import Python from '../../codeExamples/dynamicProgrammingPython';
-import CodeBlock from './CodeBlock';
-import SideBar from './SideBar';
-
-function CodeContainer({ syntax, code, title, description}) {
-    const splitDesc = description.split('<br>');
-
-    return (
-      <div className="code-block-container">
-          <h5 className="code-block-descr">{title}</h5>
-          <div className="syntax description">
-              {splitDesc.map((desc, idx) => <p key={idx}>{desc}</p>)}
-          </div>
-          <CodeBlock syntax={syntax} code={code}/>
-      </div>
-    );
-}
+import CodeContainer from './CodeContainer';
 
 function CoinChange({ codeLanguageDict }) {
     return (
@@ -54,59 +39,33 @@ function Strings({ codeLanguageDict }) {
     )
 }
 
-export default class DynamicProgramming extends Component {
-    constructor(props) {
-        super(props);
-        this.onSelectedChanged = this.onSelectedChanged.bind(this);
-    }
+function Counting({ codeLanguageDict }) {
+    return (
+        <>
+            <CodeContainer syntax={codeLanguageDict.longestPalindromeSubstring.syntax} code={Python.kadanes} title={'Kadanes'}
+                           description={'Find the sum of contiguous subarray within a one-dimensional array of numbers which has the largest sum.'}
+            />
+            <CodeContainer syntax={codeLanguageDict.longestPalindromeSubsequence.syntax} code={Python.maxSubarray} title={'Max Subarray'}
+                           description={'Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.'}
+            />
+            <CodeContainer syntax={codeLanguageDict.longestCommonSubstring.syntax} code={Python.missing} title={'Find the Missing Number'}
+                           description={'You are given a list of n-1 integers and these integers are in the range of 1 to n. There are no duplicates in the list. One of the integers is missing in the list. Write an efficient code to find the missing integer.'}
+            />
+            <CodeContainer syntax={codeLanguageDict.longestCommonSubstring.syntax} code={Python.substringSum} title={'Substring Sum'}
+                           description={'You are given a one dimensional array that may contain both positive and negative integers, find the sum of contiguous subarray of numbers which has the largest sum.'}
+            />
+        </>
+    )
+}
 
-    state = {
-        codeLanguageDict: {
-            coinChange: {
-                syntax: 'python'
-            },
-            coinChangeNoRepeat: {
-                syntax: 'python'
-            },
-            leastCoins: {
-                syntax: 'python'
-            },
-            longestPalindromeSubstring: {
-                syntax: 'python'
-            },
-            longestPalindromeSubsequence: {
-                syntax: 'python'
-            },
-            longestCommonSubstring: {
-                syntax: 'python'
-            }
-        },
-        sidebarValues: ['Coin Change', 'Strings', 'Counting and Sums', 'Partitions'],
-        selected: 'Coin Change'
-    };
-
-    onSelectedChanged(selected) {
-        this.setState({ selected });
-    }
-
-    render() {
-        return (
-            <div className="a-continer">
-                <div className="code-containers">
-                  <div className="algo-content">
-                    <SideBar sidebarValues={this.state.sidebarValues} selected={this.state.selected} onSidebarChange={this.onSelectedChanged}/>
-                    <div className="dp-intro">
-                    </div>
-                      <div className="code-blocks">
-                          { this.state.selected === 'Coin Change' && <CoinChange codeLanguageDict={this.state.codeLanguageDict}/> }
-                          { this.state.selected === 'Strings' && <Strings codeLanguageDict={this.state.codeLanguageDict}/> }
-                      </div>
-                  </div>
-                </div>
-            </div>
-        );
-    }
-
+export default function DynamicProgramming ({ selected, codeLanguageDict }) {
+    return (
+        <div className="code-blocks">
+            { selected === 'Coin Change' && <CoinChange codeLanguageDict={codeLanguageDict}/> }
+            { selected === 'Strings' && <Strings codeLanguageDict={codeLanguageDict}/> }
+            { selected === 'Counting and Sums' && <Counting codeLanguageDict={codeLanguageDict}/> }
+        </div>
+    );
 }
 
 
