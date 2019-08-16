@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import me from '../images/me.jpg';
 import { onBitbucketClick, onFacebookClick, onGithubClick, onLinkedInClick } from '../utils/navUtils';
+import '../styles/home.less';
 // import python from '../images/python.png';
 // import java from '../images/java.png';
 // import node from '../images/node.png';
@@ -33,7 +34,7 @@ export default class Home extends Component {
                     </div>
                     <div className="home-top-text">
                         <h2 className="home-h2">Jason Buoni</h2>
-                        <span className="home-title">Software developer <br /> Avid mentor and pet enthusiast</span>
+                        <span className="home-title">Software developer <br/> Avid mentor <br/> Pet enthusiast</span>
                     </div>
                 </div>
                 <main className="container p3 ">

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import resume from '../files/resume.pdf';
+import { Link } from 'react-router-dom'
 
 export default class NavigationBar extends Component {
 
@@ -23,13 +24,21 @@ export default class NavigationBar extends Component {
     }
 
 
+
     render() {
         return (
             <>
                 <div className="nav-bar">
-                    <div className="nav nav-brand">Jason Buoni</div>
+                    <div className="nav nav-brand" >
+                        <Link to="/home" >Jason Buoni</Link>
+                    </div>
                     <div className="nav-right">
-                        <span className="nav nav-link">Algos</span>
+                        <span className="nav nav-link">
+                            <Link to="/algo" >Algorithms</Link>
+                        </span>
+                        <span className="nav nav-link">
+                            <Link to="/exp" >Experience / Projects</Link>
+                        </span>
                         <span className="nav nav-link" onClick={this.onHackerRankClick}>HackerRank</span>
                         <span className="nav nav-link" onClick={this.onResumeClick}>Resume</span>
                     </div>
