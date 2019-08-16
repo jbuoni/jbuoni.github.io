@@ -2,15 +2,6 @@ import React, { Component } from 'react';
 import me from '../images/me.jpg';
 import { onBitbucketClick, onFacebookClick, onGithubClick, onLinkedInClick } from '../utils/navUtils';
 import '../styles/home.less';
-// import python from '../images/python.png';
-// import java from '../images/java.png';
-// import node from '../images/node.png';
-// import android from '../images/android.png';
-// import react from '../images/postgres.png';
-// import postgres from '../images/react.png';
-// import csharp from '../images/csharp.png';
-// import mongo from '../images/mongo.png';
-// import scala from '../images/scala.png';
 
 export default class Home extends Component {
     constructor(props) {
@@ -28,13 +19,13 @@ export default class Home extends Component {
     render() {
         return (
             <>
-                <div className="home-top">
-                    <div className="home-image-wrapper">
+                <div className="top">
+                    <div className="top-image-wrapper">
                         <img src={me} className="me-img" />
                     </div>
-                    <div className="home-top-text">
-                        <h2 className="home-h2">Jason Buoni</h2>
-                        <span className="home-title">Software developer <br/> Avid mentor <br/> Pet enthusiast</span>
+                    <div className="top-text">
+                        <h2 className="top-h2">Jason Buoni</h2>
+                        <span className="top-title">Software developer <br/> Avid mentor <br/> Pet enthusiast</span>
                     </div>
                 </div>
                 <main className="container p3 ">
@@ -51,17 +42,6 @@ export default class Home extends Component {
                                 Great Pyrenees puppies. One day Jason will redo their website, but for now you can see it
                                 <span  className="item-hover" onClick={this.clickFarm}><i> here.</i></span>
                             </span>
-                            {/*<div className="logos">*/}
-                                {/*<img src={python} className="me-logo" />*/}
-                                {/*<img src={java} className="me-logo" />*/}
-                                {/*<img src={node} className="me-logo" />*/}
-                                {/*<img src={android} className="me-logo" />*/}
-                                {/*<img src={react} className="me-logo" />*/}
-                                {/*<img src={csharp} className="me-logo" />*/}
-                                {/*<img src={scala} className="me-logo" />*/}
-                                {/*<img src={postgres} className="me-logo" />*/}
-                                {/*<img src={mongo} className="me-logo" />*/}
-                            {/*</div>*/}
                         </div>
                         <div className="col sm-col-3">
                             <h3 className="home-h3">Contact</h3>

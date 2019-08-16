@@ -3,6 +3,7 @@ import '../../styles/algo.less';
 import DynamicProgramming from './DynamicProgramming';
 import SideBar from './SideBar';
 import Graphs from './Graphs';
+import StacksAndQueues from './StacksAndQueues'
 
 export default class Algo extends Component {
     constructor(props) {
@@ -45,7 +46,33 @@ export default class Algo extends Component {
             dijkstras: {
                 syntax: 'python'
             },
-
+            directed: {
+                syntax: 'python'
+            },
+            undirected: {
+                syntax: 'python'
+            },
+            flood: {
+                syntax: 'python'
+            },
+            kruskal: {
+                syntax: 'python'
+            },
+            prims: {
+                syntax: 'python'
+            },
+            union: {
+                syntax: 'python'
+            },
+            queue: {
+                syntax: 'python'
+            },
+            min: {
+                syntax: 'python'
+            },
+            matching: {
+                syntax: 'python'
+            }
         },
         sidebarValues: [
             {
@@ -55,6 +82,10 @@ export default class Algo extends Component {
             {
                 category: 'Graphs',
                 values: [ 'Dijkstras', 'Flood Fill', 'Directed Graphs', 'Undirected Graphs', 'Weighted Graphs']
+            },
+            {
+                category: 'Stacks and Queues',
+                values: ['Queue', 'Stacks']
             }
 
         ],
@@ -78,6 +109,7 @@ export default class Algo extends Component {
                               <div className="code-blocks">
                                   <DynamicProgramming selected={this.state.selected} codeLanguageDict={this.state.codeLanguageDict}/>
                                   <Graphs selected={this.state.selected} codeLanguageDict={this.state.codeLanguageDict}/>
+                                  <StacksAndQueues selected={this.state.selected} codeLanguageDict={this.state.codeLanguageDict}/>
                               </div>
                           </div>
                       </div>
