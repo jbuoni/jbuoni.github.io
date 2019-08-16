@@ -60,11 +60,11 @@ function Counting({ codeLanguageDict }) {
 
 export default function DynamicProgramming ({ selected, codeLanguageDict }) {
     return (
-        <div className="code-blocks">
+        <>
             { selected === 'Coin Change' && <CoinChange codeLanguageDict={codeLanguageDict}/> }
             { selected === 'Strings' && <Strings codeLanguageDict={codeLanguageDict}/> }
             { selected === 'Counting and Sums' && <Counting codeLanguageDict={codeLanguageDict}/> }
-        </div>
+        </>
     );
 }
 

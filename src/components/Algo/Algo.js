@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../../styles/algo.less';
 import DynamicProgramming from './DynamicProgramming';
 import SideBar from './SideBar';
+import Graphs from './Graphs';
 
 export default class Algo extends Component {
     constructor(props) {
@@ -40,12 +41,20 @@ export default class Algo extends Component {
             },
             substringSum: {
                 syntax: 'python'
-            }
+            },
+            dijkstras: {
+                syntax: 'python'
+            },
+
         },
         sidebarValues: [
             {
                 category: 'Dynamic Programming',
                 values: ['Coin Change', 'Strings', 'Counting and Sums']
+            },
+            {
+                category: 'Graphs',
+                values: [ 'Dijkstras', 'Flood Fill', 'Directed Graphs', 'Undirected Graphs', 'Weighted Graphs']
             }
 
         ],
@@ -68,6 +77,7 @@ export default class Algo extends Component {
                               </div>
                               <div className="code-blocks">
                                   <DynamicProgramming selected={this.state.selected} codeLanguageDict={this.state.codeLanguageDict}/>
+                                  <Graphs selected={this.state.selected} codeLanguageDict={this.state.codeLanguageDict}/>
                               </div>
                           </div>
                       </div>
