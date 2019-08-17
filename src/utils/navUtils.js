@@ -1,6 +1,7 @@
 
 function onBitbucketClick(e) {
-    window.location = 'https://bitbucket.org/JasonBuoni25/';
+    const win = window.open('https://bitbucket.org/JasonBuoni25/', '_blank');
+    win.focus();
 }
 
 function onFacebookClick(e) {
