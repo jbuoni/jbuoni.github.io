@@ -40,9 +40,12 @@ export default class NavigationBar extends Component {
             <>
                 <div className="nav-bar">
                     <div className="nav nav-brand" >
-                        <Link onClick={() => this.onSelectedChanged('home')} to="/home" >Jason Buoni</Link>
+                        <Link onClick={() => this.onSelectedChanged('home')} to="/Landing" >Jason Buoni</Link>
                     </div>
                     <div className="nav-right">
+                        <span className={`nav nav-link ${currentTab === 'about' && 'nav-selected' || ''}`}>
+                            <Link onClick={() => this.onSelectedChanged('algo')} to="/about" >About</Link>
+                        </span>
                         <span className={`nav nav-link ${currentTab === 'algo' && 'nav-selected' || ''}`}>
                             <Link onClick={() => this.onSelectedChanged('algo')} to="/algo" >Algorithms</Link>
                         </span>

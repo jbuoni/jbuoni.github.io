@@ -1,6 +1,10 @@
+@hover: #E31B6D;
+
 body {
   .nav-bar {
     display: flex;
+    background-color: #1B242F;
+    border-bottom: 3px solid #04C2C9;
   }
 
   .nav-right {
@@ -11,16 +15,16 @@ body {
 
     .nav-selected {
       font-weight: bold;
+      text-decoration: underline;
     }
 
     .nav-link {
       padding-top: 10px;
-
+      color: #fff;
 
       &:hover {
         cursor: pointer;
-        background-color: #E0F1FF;
-        border: #ebf2f7 solid 1px;
+        color: @hover !important;
       }
     }
   }
@@ -32,13 +36,16 @@ body {
 
     &:hover {
       cursor: pointer;
-      background-color: #E0F1FF;
-      border: #ebf2f7 solid 1px;
+      color: @hover !important;
     }
   }
 
   a {
-    color: #212529 !important;
+    color: #fff !important;
     text-decoration: none !important;
+
+    &:hover {
+      color: @hover !important;
+    }
   }
 }

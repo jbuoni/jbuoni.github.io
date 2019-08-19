@@ -19,6 +19,12 @@ function onGithubClick(e) {
     win.focus();
 }
 
+function onStackOverflowClick(e) {
+    const win = window.open('https://stackoverflow.com/users/650489/stanley-cup-phil', '_blank');
+    win.focus();
+}
 
-export { onBitbucketClick, onFacebookClick, onGithubClick, onLinkedInClick };
+
+
+export { onBitbucketClick, onFacebookClick, onGithubClick, onLinkedInClick, onStackOverflowClick };
 
