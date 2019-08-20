@@ -1,14 +1,30 @@
+// Libs
 import React from 'react';
 import { HashRouter, Switch, Redirect, Route } from 'react-router-dom';
+import { isIE, isMobile } from 'react-device-detect';
+// Regular
 import About from './About';
 import Algo from './Algo';
 import Projects from './Projects';
 import Landing from './Landing';
 import NavigationBar from './Navigation';
 import Footer from './Footer';
+// Mobile
+import MobileAbout from './Mobile';
+import MobileNav from './MobileNav';
 
 function HomeWrapped() {
     document.body.style.overflow = 'auto';
+
+    if(isMobile) {
+        return (
+            <>
+                <MobileNav />
+                <MobileAbout/>
+                <Footer />
+            </>
+        );
+    }
     return (
         <>
             <div className="site-header">
@@ -51,9 +67,9 @@ function LandingWrapped() {
     return <Landing/>
 }
 
+
+
 export default function App() {
-
-
     return (
         <HashRouter>
             <div className='site-content'>
