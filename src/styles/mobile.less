@@ -2,24 +2,92 @@
 
 body {
 
-  .Navbar {
+  .project-content-mobile {
+    display: block;
+    padding-top: 50px;
+
+    .project-title {
+      display: flex;
+    }
+  }
+
+  .circle-mobile {
+    display: flex;
+    align-items: center;
+    height: 5.5em;
+    width: 5.5em;
+    background-color: #04C2C9;
+    border-radius: 50%;
+    color: #E31B6D;
+    margin-left: auto;
+    margin-right: auto;
+
+    .python {
+      padding-left: 0.09em;
+    }
+
+    .java {
+      padding-left: 0.2em;
+    }
+
+    .android {
+      padding-left: 0.09em;
+    }
+
+    .react {
+      padding-left: 0.03em;
+    }
+  }
+
+  .project-image-container-mobile {
+    .project-image-full {
+      height: 9em;
+    }
+
+    .project-image {
+      height: 7em;
+      padding-left: .2em;
+      padding-right: .2em;
+    }
+  }
+
+  .icon-mobile {
+    font-size: 1.5em;
+    padding-left: .2em;
+  }
+
+  .project-description-mobile {
+    font-size: .75em;
+  }
+
+  .nav-bar-mobile {
+    height: 3.5em;
+    display: flex;
     background-color: @primary;
-  }
-
-  .navbar-brand {
-    padding-left: .85em;
-  }
-
-  .navbar-items,
-  .Navbar {
     flex-direction: column;
+    border-bottom: 3px solid @third;
+
+    .burger {
+      padding-top: 0.4em;
+      padding-bottom: 0.4em;
+      font-size: 1.8em;
+    }
   }
+
+  .navbar-link-brand {
+    padding-left: 1em;
+  }
+
   .navbar-items {
-    display:none;
+    max-width: 1200px;
+    width: 100%;
+    position: absolute;
+    top: 3.5em;
+    background: #333;
+    overflow: hidden;
+    transition: height .3s ease-out;
   }
-  .navbar-items--right {
-    margin-left:0;
-  }
+
 
   .navbar-link-toggle {
     align-self: flex-end;
@@ -27,7 +95,15 @@ body {
     position: absolute;
     cursor: pointer;
     padding-right: .85em;
-    color: white;
+    color: @white;
+  }
+
+  .nav-link {
+    color: @white;
+  }
+
+  .nav-selected {
+    color: @third;
   }
 
   h1 {
@@ -36,6 +112,13 @@ body {
 
   h3 {
     font-size: 1.5em;
+  }
+
+  .links {
+    display: flex;
+    .item-hover {
+      padding-left: 2em;
+    }
   }
 
   .about-content-mobile {

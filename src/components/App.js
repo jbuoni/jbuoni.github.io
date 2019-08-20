@@ -10,8 +10,9 @@ import Landing from './Landing';
 import NavigationBar from './Navigation';
 import Footer from './Footer';
 // Mobile
-import MobileAbout from './Mobile';
+import MobileAbout from './MobileAbout';
 import MobileNav from './MobileNav';
+import MobileProjects from './ProjectsMobile';
 
 function HomeWrapped() {
     document.body.style.overflow = 'auto';
@@ -21,7 +22,10 @@ function HomeWrapped() {
             <>
                 <MobileNav />
                 <MobileAbout/>
-                <Footer />
+                <>
+                    <div className="footer">
+                    </div>
+                </>
             </>
         );
     }
@@ -38,6 +42,20 @@ function HomeWrapped() {
 
 function AlgoWrapped() {
     document.body.style.overflow = 'auto';
+
+    if(isMobile) {
+        return (
+            <>
+                <MobileNav />
+                <MobileAbout/>
+                <>
+                    <div className="footer">
+                    </div>
+                </>
+            </>
+        );
+    }
+
     return (
         <>
             <div className="site-header">
@@ -51,6 +69,21 @@ function AlgoWrapped() {
 
 function ProjectsWrapped() {
     document.body.style.overflow = 'auto';
+
+    if(isMobile) {
+        document.body.style.overflowX = 'hidden';
+        return (
+            <>
+                <MobileNav />
+                <MobileProjects/>
+                <>
+                    <div className="footer">
+                    </div>
+                </>
+            </>
+        );
+    }
+
     return (
         <>
             <div className="site-header">
