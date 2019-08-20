@@ -1,15 +1,6 @@
 import React, { Component } from 'react';
 import '../../styles/projects.less';
 import Fade from 'react-reveal/Fade';
-// Logos
-import python from '../../images/python.png';
-import java from '../../images/java.png';
-import node from '../../images/node.png';
-import android from '../../images/android.png';
-import react from '../../images/react.png';
-import csharp from '../../images/csharp.png';
-import mongo from '../../images/mongo.png';
-import js from '../../images/js.png';
 // Project Images
 import mosaic1 from '../../images/mosaic1.png';
 import mosaic2 from '../../images/mosaic2.png';

@@ -38,7 +38,6 @@ export default class Landing extends Component {
                     <div className="landing-container">
 
                         <h2 className="top-h2">Jason Buoni</h2>
-                        <Typist.Delay ms={500} />
                         <span >Software developer <br/> Avid mentor <br/> Pet enthusiast <br/></span>
                         <div className="col-md-3 col-sm-3 col-xs-6 landing-link-container"
                              onMouseEnter={this.toggleButtonHover} onMouseLeave={this.toggleButtonHover}>
