@@ -54,21 +54,18 @@ export default class About extends Component {
                     </div>
                 </Fade>
                 <div className="about-bottom">
-                    <Fade left >
                         <div className="col sm-col-9 about-left">
-                            <Photo/>
-                            <div className="about-text">
-                                <h3 className="about-h1">Who's This Guy?</h3>
-                                Jason is a full stack developer who loves just about every language not named C.
-                                After spending years in the Rochester tundra, Jason was able to receive his undergrad from RIT.
-                                Once he moved to the tropics in Atlanta, Jason worked to receive his Masters from Georgia Tech.
-                                Jason is also a pet enthusiast, who will always have multiple pets in his house at any given time.
-                                Jason also have very loving parents who raise Nubian Goats and
-                                Great Pyrenees puppies. One day Jason will redo their website, but for now you can see it
-                                <span  className="item-hover" onClick={this.clickFarm}><i> here.</i></span>
-                            </div>
+                            <Fade left >
+                                <Photo/>
+                            </Fade>
+                            <Fade bottom>
+                                <div className="about-text">
+                                    <h3 className="about-h1">Who's This Guy?</h3>
+                                    I am a full stack developer who loves just about every language not named C. After spending years in the Rochester tundra, I was able to earn my undergrad from RIT. Once I moved to the tropics in Atlanta, I worked to obtain my Masters from Georgia Tech. I am also a pet enthusiast, and will always have multiple pets in my house at any given time. I also have very loving parents who raise Nubian Goats and Great Pyrenees puppies. One day I'll redo their website, but for now you can see it
+                                    <span  className="item-hover" onClick={this.clickFarm}><i> here.</i></span>
+                                </div>
+                            </Fade>
                         </div>
-                    </Fade>
                     <div className="col about-right">
                         <Fade right>
                             < Experience />
