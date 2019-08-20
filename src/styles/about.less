@@ -1,12 +1,4 @@
-@font-face {
-  font-family: 'Railway';
-  src: url('//fonts.googleapis.com/css?family=Raleway');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@color: #E31B6D;
+@import "shared.less";
 
 body {
   font-family: Helvetica;
@@ -48,7 +40,11 @@ body {
     }
 
     .progress-bar {
-      background-color: @color;
+      background-color: @secondary;
+    }
+
+    .progress {
+      background-color: #E31B6D !important;
     }
 
     .about-middle {
@@ -56,6 +52,8 @@ body {
       flex-direction: row;
       justify-content: space-between;
       padding: 0 50px 50px 50px;
+      width: 100%;
+      background-color: @white;
 
       .mid-icon {
         text-align: center;
@@ -74,9 +72,9 @@ body {
           align-items: center;
           height: 105px;
           width: 105px;
-          background-color: @color;
+          background-color: @secondary;
           border-radius: 50%;
-          color: #fff;
+          color: @white;
           margin-left: auto;
           margin-right: auto;
 

@@ -1,4 +1,4 @@
-@color: #E31B6D;
+@import "shared.less";
 
 body {
   height: 100%;
@@ -8,7 +8,7 @@ body {
     font-family: inherit;
     font-weight: 500;
     line-height: 1.2;
-    color: @color;
+    color: @secondary;
   }
 
   .landing-image {
@@ -46,8 +46,8 @@ body {
     font-size: 1.5rem;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: white;
-    border: 3px solid #f1f1f1;
+    color: @white;
+    border: 3px solid @secondary;
     position: absolute;
     top: 50%;
     left: 50%;

@@ -1,10 +1,11 @@
-@hover: #E31B6D;
+@import "shared.less";
+@hover: @third;
 
 body {
   .nav-bar {
     display: flex;
-    background-color: #1B242F;
-    border-bottom: 3px solid #04C2C9;
+    background-color: @primary;
+    border-bottom: 3px solid @third;
   }
 
   .nav-right {
@@ -20,7 +21,7 @@ body {
 
     .nav-link {
       padding-top: 10px;
-      color: #fff;
+      color: @white;
 
       &:hover {
         cursor: pointer;
@@ -41,7 +42,7 @@ body {
   }
 
   a {
-    color: #fff !important;
+    color: @white !important;
     text-decoration: none !important;
 
     &:hover {
