@@ -38,7 +38,7 @@ export default class Landing extends Component {
                     <div className="landing-container">
 
                         <h2 className="top-h2">Jason Buoni</h2>
-                        <span >Software developer <br/> Avid mentor <br/> Pet enthusiast <br/></span>
+                        <span >Software Developer.<br/>Pet Enthusiast.<br/>Mentor.<br/></span>
                         <div className="col-md-3 col-sm-3 col-xs-6 landing-link-container"
                              onMouseEnter={this.toggleButtonHover} onMouseLeave={this.toggleButtonHover}>
                             <Link to="/about" className="btn btn-sm animated-button victoria-one">View More</Link>
