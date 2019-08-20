@@ -64,7 +64,7 @@ export default class MobileProjects extends Component {
                         <Fade left>
                             <div className="col sm-col-7 mosaic col-border">
                                 <div className="project-title">
-                                    <h4>Mosaic Python</h4>
+                                    <h5>Mosaic Python</h5>
                                     <RepoLink link='https://github.com/jbuoni/MosaicPython' repoType='github'/>
                                     <div className="project-tool-container">
                                         <i className="fab fa-python fa-2x python icon-mobile"></i>
@@ -85,7 +85,7 @@ export default class MobileProjects extends Component {
                         <Fade left>
                             <div className="col sm-col-7 strategy col-border">
                                 <div className="project-title">
-                                    <h4>Strategy Learner</h4>
+                                    <h5>Strategy Learner</h5>
                                     <RepoLink link='https://bitbucket.org/JasonBuoni25/strategy-learner/src/master/' repoType='bitbucket'/>
                                     <div className="project-tool-container">
                                         <i className="fab fa-python fa-2x python icon-mobile"></i>
@@ -107,7 +107,7 @@ export default class MobileProjects extends Component {
                         <Fade left>
                             <div className="col sm-col-7 android-list col-border">
                                 <div className="project-title">
-                                    <h4>Georgia Tech Scheduler</h4><RepoLink link='https://github.com/jbuoni/GeorgiaTechScheduler' repoType='github'/>
+                                    <h5>Georgia Tech Scheduler</h5><RepoLink link='https://github.com/jbuoni/GeorgiaTechScheduler' repoType='github'/>
                                     <div className="project-tool-container">
                                         <i className="fab fa-python fa-2x python icon-mobile"></i>
                                         <i className="fab fa-js fa-2x python icon-mobile"></i>
@@ -130,7 +130,7 @@ export default class MobileProjects extends Component {
                         <Fade left>
                             <div className="col sm-col-7 android-list col-bottom">
                                 <div className="project-title">
-                                    <h4>Shopping List</h4><RepoLink link='https://github.com/jbuoni/Android-Grocery-List' repoType='github'/>
+                                    <h5>Shopping List</h5><RepoLink link='https://github.com/jbuoni/Android-Grocery-List' repoType='github'/>
                                     <div className="project-tool-container">
                                         <i className="fab fa-java fa-2x icon-mobile"></i>
                                         <i className="fab fa-android fa-2x icon-mobile"></i>
