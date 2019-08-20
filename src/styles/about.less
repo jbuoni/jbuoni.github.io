@@ -15,16 +15,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 
-    .about-top {
-      padding-top: 40px;
-
-      .header-bar {
-        width: 105px;
-        height: 4px;
-        background: #444649;
-      }
-    }
 
     .about-panel {
       padding-top: 15px;
@@ -53,21 +45,57 @@ body {
 
     }
 
+    .progress-bar {
+      background-color: #D24D57;
+    }
+
     .about-middle {
-      .mid-icom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 50px 50px 50px;
+
+      .mid-icon {
         text-align: center;
         margin-left: 10px;
-        margin-top: 10px;
+        margin-top: 5px;
       }
 
-      .circle {
-        display: flex;
-        align-items: center;
-        height: 85px;
-        width: 85px;
-        background-color: #04C2C9;
-        border-radius: 50%;
-        color: #fff;
+      .icon-container {
+        display: block;
+        text-align: center;
+        padding-left: 70px;
+        padding-right: 70px;
+
+        .circle {
+          display: flex;
+          align-items: center;
+          height: 105px;
+          width: 105px;
+          background-color: #D24D57;
+          border-radius: 50%;
+          color: #fff;
+          margin-left: auto;
+          margin-right: auto;
+
+          .stack {
+            margin-left: 18px;
+          }
+
+          .hat {
+            margin-left: 20px;
+          }
+        }
+
+        .middle-text {
+          padding-top: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+
+        .middle-exp {
+          width: 200px;
+        }
       }
     }
 
@@ -80,7 +108,7 @@ body {
         padding-top: 15px;
         text-align: center;
         width: 85%;
-        padding-left: 30px;
+        padding-left: 120px;
       }
     }
 

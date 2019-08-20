@@ -4,6 +4,7 @@ import DynamicProgramming from './DynamicProgramming';
 import SideBar from './SideBar';
 import Graphs from './Graphs';
 import StacksAndQueues from './StacksAndQueues'
+import TopHeader from '../TopHeader';
 
 export default class Algo extends Component {
     constructor(props) {
@@ -104,13 +105,16 @@ export default class Algo extends Component {
                       <div className="code-containers">
                           <div className="algo-content">
                               <SideBar sidebarValues={this.state.sidebarValues} selected={this.state.selected} onSidebarChange={this.onSelectedChanged}/>
-                              <div className="dp-intro">
-                              </div>
-                              <div className="code-blocks">
-                                  <DynamicProgramming selected={this.state.selected} codeLanguageDict={this.state.codeLanguageDict}/>
-                                  <Graphs selected={this.state.selected} codeLanguageDict={this.state.codeLanguageDict}/>
-                                  <StacksAndQueues selected={this.state.selected} codeLanguageDict={this.state.codeLanguageDict}/>
-                              </div>
+                              <div>
+                                  <div className="header-container">
+                                      <TopHeader text="Algorithms" lineWidth="line-algo"/>
+                                  </div>
+                                  <div className="code-blocks">
+                                      <DynamicProgramming selected={this.state.selected} codeLanguageDict={this.state.codeLanguageDict}/>
+                                      <Graphs selected={this.state.selected} codeLanguageDict={this.state.codeLanguageDict}/>
+                                      <StacksAndQueues selected={this.state.selected} codeLanguageDict={this.state.codeLanguageDict}/>
+                                  </div>
+                            </div>
                           </div>
                       </div>
                   </div>

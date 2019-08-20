@@ -1,6 +1,7 @@
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import Fade from 'react-reveal/Fade';
 
 function CodeBlock({ syntax, code }) {
     return (
@@ -14,12 +15,14 @@ export default function CodeContainer({ syntax, code, title, description}) {
     const splitDesc = description.split('<br>');
 
     return (
-        <div className="code-block-container">
-            <h5 className="code-block-descr">{title}</h5>
-            <div className="syntax description">
-                {splitDesc.map((desc, idx) => <p key={idx}>{desc}</p>)}
+        <Fade right>
+            <div className="code-block-container">
+                <h5 className="code-block-descr">{title}</h5>
+                <div className="syntax description">
+                    {splitDesc.map((desc, idx) => <p key={idx}>{desc}</p>)}
+                </div>
+                <CodeBlock syntax={syntax} code={code}/>
             </div>
-            <CodeBlock syntax={syntax} code={code}/>
-        </div>
+        </Fade>
     );
 }

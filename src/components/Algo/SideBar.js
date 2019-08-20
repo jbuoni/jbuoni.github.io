@@ -11,7 +11,7 @@ function SidebarCategory({ category, values,onSidebarChange, selected }) {
                        className={selected === item ? "sidebar-item-selected" : "sidebar-item"}
                        onClick={() => onSidebarChange(item)}
                   >
-                      --  {item}
+                      &nbsp;&nbsp;&nbsp;{item}
                   </div>)
               }
           </div>
