@@ -29,28 +29,27 @@ body {
         width: 115px;
         background-color: @secondary;
         border-radius: 50%;
-        color: @white;
+        color: @third;
         margin-left: auto;
         margin-right: auto;
 
-        img {
-          filter: grey; /* IE6-9 */
-          -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-          filter: grayscale(1); /* Micr */
-        }
-        .python, .csharp {
-          padding-left: 10px;
-        }
-
-        .java, .node {
-          padding-left: 5px;
-        }
-
-        .android, .mongo  {
+        .python {
           padding-left: 15px;
         }
 
-        .react{
+        .js {
+          padding-left: 23px;
+        }
+
+        .java {
+          padding-left: 20px;;
+        }
+
+        .android  {
+          padding-left: 15px;
+        }
+
+        .react, .node {
           padding-left: 8px;
         }
       }
@@ -71,11 +70,11 @@ body {
       }
 
       .project-tool-container {
-        .project-tool {
-          height: 30px;
-          padding: 5px 0 0 10px;
-          -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-          filter: grayscale(100%);
+        padding: 0 0 0 5px;
+
+        i {
+          padding-left: 5px;
+          padding-top: 5px;
         }
       }
     }

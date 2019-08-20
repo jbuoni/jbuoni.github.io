@@ -53,25 +53,22 @@ export default class Projects extends Component {
                         <div className="top-image-wrapper">
                             <div className="logos">
                                 <div className="circle">
-                                    <img src={python} className="me-logo python" />
+                                    <i className="fab fa-python fa-6x python"></i>
                                 </div>
                                 <div className="circle">
-                                    <img src={java} className="me-logo java" />
+                                    <i className="fab fa-java fa-6x java"></i>
                                 </div>
                                 <div className="circle">
-                                    <img src={node} className="me-logo node" />
+                                    <i className="fab fa-node fa-5x node"></i>
                                 </div>
                                 <div className="circle">
-                                    <img src={android} className="me-logo android" />
+                                    <i className="fab fa-android fa-6x android"></i>
                                 </div>
                                 <div className="circle">
-                                    <img src={react} className="me-logo react" />
+                                    <i className="fab fa-react fa-6x react"></i>
                                 </div>
                                 <div className="circle">
-                                    <img src={csharp} className="me-logo csharp" />
-                                </div>
-                                <div className="circle">
-                                    <img src={mongo} className="me-logo mongo" />
+                                    <i className="fab fa-js fa-5x js"></i>
                                 </div>
                             </div>
                         </div>
@@ -82,9 +79,10 @@ export default class Projects extends Component {
                         <Fade left>
                             <div className="col sm-col-7 mosaic col-border">
                                 <div className="project-title">
-                                    <h2>Mosaic Python</h2><RepoLink link='https://github.com/jbuoni/MosaicPython' repoType='github'/>
+                                    <h2>Mosaic Python</h2>
+                                    <RepoLink link='https://github.com/jbuoni/MosaicPython' repoType='github'/>
                                     <div className="project-tool-container">
-                                        <img src={python} className="project-tool" />
+                                        <i className="fab fa-python fa-2x python"></i>
                                     </div>
                                 </div>
                                 <div className="project-information">
@@ -102,9 +100,10 @@ export default class Projects extends Component {
                         <Fade left>
                             <div className="col sm-col-7 strategy col-border">
                                 <div className="project-title">
-                                    <h2>Strategy Learner</h2><RepoLink link='https://bitbucket.org/JasonBuoni25/strategy-learner/src/master/' repoType='bitbucket'/>
+                                    <h2>Strategy Learner</h2>
+                                    <RepoLink link='https://bitbucket.org/JasonBuoni25/strategy-learner/src/master/' repoType='bitbucket'/>
                                     <div className="project-tool-container">
-                                        <img src={python} className="project-tool" />
+                                        <i className="fab fa-python fa-2x python"></i>
                                     </div>
                                 </div>
                                 <div className="project-information">
@@ -125,9 +124,8 @@ export default class Projects extends Component {
                                 <div className="project-title">
                                     <h2>Georgia Tech Scheduler</h2><RepoLink link='https://github.com/jbuoni/GeorgiaTechScheduler' repoType='github'/>
                                     <div className="project-tool-container">
-                                        <img src={python} className="project-tool" />
-                                        <img src={js} className="project-tool" />
-                                        <img src={mongo} className="project-tool" />
+                                        <i className="fab fa-python fa-2x python"></i>
+                                        <i className="fab fa-js fa-2x python"></i>
                                     </div>
                                 </div>
                                 <div className="project-information">
@@ -149,8 +147,8 @@ export default class Projects extends Component {
                                 <div className="project-title">
                                     <h2>Shopping List</h2><RepoLink link='https://github.com/jbuoni/Android-Grocery-List' repoType='github'/>
                                     <div className="project-tool-container">
-                                        <img src={java} className="project-tool" />
-                                        <img src={android} className="project-tool" />
+                                        <i className="fab fa-java fa-2x"></i>
+                                        <i className="fab fa-android fa-2x"></i>
                                     </div>
                                 </div>
                                 <div className="project-information">
