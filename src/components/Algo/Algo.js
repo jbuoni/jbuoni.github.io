@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../../styles/algo.less';
 import DynamicProgramming from './DynamicProgramming';
 import SideBar from './SideBar';
+import Fade from 'react-reveal/Fade';
 import Graphs from './Graphs';
 import StacksAndQueues from './StacksAndQueues'
 import TopHeader from '../TopHeader';
@@ -104,7 +105,9 @@ export default class Algo extends Component {
                   <div className="a-continer">
                       <div className="code-containers">
                           <div className="algo-content">
-                              <SideBar sidebarValues={this.state.sidebarValues} selected={this.state.selected} onSidebarChange={this.onSelectedChanged}/>
+                              <Fade left>
+                                <SideBar sidebarValues={this.state.sidebarValues} selected={this.state.selected} onSidebarChange={this.onSelectedChanged}/>
+                              </Fade>
                               <div>
                                   <div className="header-container">
                                       <TopHeader text="Algorithms" lineWidth="line-algo"/>
