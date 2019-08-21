@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import resume from '../files/resume.pdf';
 import { Link } from 'react-router-dom';
 
 export default class NavigationBar extends Component {
@@ -25,9 +24,6 @@ export default class NavigationBar extends Component {
         this.setState({ currentTab: 'hack' }, () => window.location = 'https://www.hackerrank.com/JBuoni?hr_r=1' );
     }
 
-    onResumeClick(e) {
-        this.setState({ currentTab: 'resume' }, () => window.location = resume );
-    }
 
     onSelectedChanged(currentTab) {
         this.setState({ currentTab });
