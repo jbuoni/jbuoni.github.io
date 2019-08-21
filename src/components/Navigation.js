@@ -6,7 +6,6 @@ export default class NavigationBar extends Component {
     constructor(props) {
         super(props);
         this.onHackerRankClick = this.onHackerRankClick.bind(this);
-        this.onResumeClick = this.onResumeClick.bind(this);
         this.onSelectedChanged = this.onSelectedChanged.bind(this);
     }
 
