@@ -53,16 +53,19 @@ export default function Resume() {
                     <div className="resume-name">Jason Buoni</div>
                     <div className="resume-title">Software Engineer</div>
                 </div>
-                <div className="resume-about">
-                    <b> Who am I? </b>
-                    <br/> I am a polyglot developer with a Masters in Computer Science.
-                    I focus on full stack development and enjoy learning about cyber security principles and machine learning.
-                    After struggling with my resume, I decided to go a different route
-                    and make my own template. I created this resume using ReactJS. You can see it on my website!
-                </div>
             </div>
             <div className="resume-content">
                 <div className="resume-content-right">
+                    <div className="about">
+                        <h3 className="resume-header">Who am I?</h3>
+                        <div className="about-text">
+                            I am a polyglot developer with a Masters in Computer Science.
+                            I focus on full stack development and enjoy learning about cyber security
+                            principles and machine learning. After struggling with my resume, I decided
+                            to go a different route and make my own template. I created this resume using ReactJS.
+                            You can see it on my website!
+                        </div>
+                    </div>
                     <div className="personal">
                         <h3 className="resume-header">Personal</h3>
                         <div className="resume-content-item"><ContentWithFontAwesome faClass="fas fa-laptop laptop" text="buoni.github.io"/></div>
