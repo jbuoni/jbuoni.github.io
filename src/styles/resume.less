@@ -1,0 +1,89 @@
+@import "shared.less";
+
+body {
+  font-family: Arial;
+  .resume-top {
+    width: 100%;
+    height: 7em;
+    background-color: @primary;
+    padding-left: 1.5em;
+    border-bottom: @third solid .2em;
+
+    .resume-name {
+      color: @white;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+
+    .resume-title {
+      color: @white;
+      font-size: 1.5em;
+    }
+  }
+  .resume-content {
+    display: flex;
+    flex-direction: row;
+
+    .resume-header {
+      color: @primary;
+    }
+
+    .resume-mid {
+      padding-top: 10px;
+      padding-left: 20px;
+      width: 75%;
+
+      .resume-section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .resume-header {
+        color: @third;
+        font-weight: bold;
+      }
+
+      .resume-item {
+        padding-left: 5px;
+      }
+
+      .resume-line {
+        background-color: @third;
+        width: 80%;
+        height: 2px;
+      }
+
+      .resume-line1 {
+        font-weight: bold;
+        color: @primary;
+      }
+    }
+
+    .resume-content-right {
+      padding-top: 1.5em;
+      padding-left: 1.5em;
+      display: flex;
+      flex-direction: column;
+      width: 24em;
+      border-right: @primary solid 1px;
+
+      .personal {
+        display: block;
+
+        .resume-icon {
+          color: @third;
+          padding-right: 16px;
+        }
+
+        .laptop {
+          padding-right: 10px;
+        }
+
+        .phone  {
+          padding-right: 20px;
+        }
+      }
+    }
+
+  }
+}

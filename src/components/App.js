@@ -7,6 +7,7 @@ import About from './About';
 import Algo from './Algo';
 import Projects from './Projects';
 import Landing from './Landing';
+import Resume from './Resume';
 import NavigationBar from './Navigation';
 import Footer from './Footer';
 // Mobile
@@ -112,6 +113,7 @@ export default function App() {
                     <Route path="/algo" component={() => <AlgoWrapped />}/>
                     <Route path="/proj" component={() => <ProjectsWrapped />}/>
                     <Route path="/landing" component={() => <LandingWrapped />} />
+                    <Route path="/resume" component={() => <Resume />} />
                     <Route render={() => <Redirect to="/landing" />} />
                 </Switch>
             </div>
