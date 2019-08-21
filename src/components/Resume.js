@@ -55,9 +55,10 @@ export default function Resume() {
                 </div>
                 <div className="resume-about">
                     <b> Who am I? </b>
-                    <br/> Polyglot developer with a Masters in Computer Science.
-                    <br/>Focusing on full stack developerment.
-                    <br/> This resume was created in ReactJS. See it on my website!
+                    <br/> I am a polyglot developer with a Masters in Computer Science.
+                    I focus on full stack development and enjoy learning about cyber security principles and machine learning.
+                    After struggling with my resume, I decided to go a different route
+                    and make my own template. I created this resume using ReactJS. You can see it on my website!
                 </div>
             </div>
             <div className="resume-content">
@@ -121,7 +122,9 @@ export default function Resume() {
                             `}
                         />
                         <ResumeRow line1="Mary Cariola Children’s Center, Rochester New York" line2="Website Developer" date="December 2012 – May 2013" />
+                        <br/>
                         <ResumeRow line1="Verivo Software, Waltham Massachusetts" line2="Product Manager" date="February 2011 – September 2011" />
+                        <br/>
                         <ResumeRow line1="Brand Networks Inc., Rochester NY​" line2="Software Developer" date="March 2012 – November 2012" />
                     </div>
                     <div className="resume-section">
