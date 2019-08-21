@@ -3,21 +3,33 @@
 body {
   font-family: Arial;
   .resume-top {
+    display: flex;
     width: 100%;
     height: 7em;
     background-color: @primary;
     padding-left: 1.5em;
     border-bottom: @third solid .2em;
 
-    .resume-name {
-      color: @white;
-      font-size: 2.5em;
-      font-weight: bold;
+    .resume-top-left {
+      .resume-name {
+        color: @white;
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+
+      .resume-title {
+        color: @white;
+        font-size: 1.5em;
+      }
     }
 
-    .resume-title {
+    .resume-about {
+      padding-top: 10px;
+      padding-right: 20px;
       color: @white;
-      font-size: 1.5em;
+      margin-left: auto;
+      order: 2;
+
     }
   }
   .resume-content {
@@ -25,6 +37,7 @@ body {
     flex-direction: row;
 
     .resume-header {
+      padding-top: 10px;
       color: @primary;
     }
 
@@ -51,6 +64,7 @@ body {
         background-color: @third;
         width: 80%;
         height: 2px;
+        margin-bottom: 5px;
       }
 
       .resume-line1 {
@@ -81,6 +95,19 @@ body {
 
         .phone  {
           padding-right: 20px;
+        }
+      }
+
+      .skills {
+        .skill-container {
+          display: flex;
+          .skill-span {
+            width: 120px;
+          }
+
+          .star {
+            color: @third;
+          }
         }
       }
     }
