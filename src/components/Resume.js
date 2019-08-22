@@ -54,6 +54,7 @@ function SkillsContainer({ skill, stars }) {
 export default function Resume() {
     return (
         <>
+            <div className="resume-overlay"></div>
             <div className="resume">
                 <div className="resume-top">
                     <div class="resume-top-left">
@@ -67,10 +68,7 @@ export default function Resume() {
                         <div className="about">
                             <h3 className="resume-header">Who am I?</h3>
                             <div className="about-text">
-                                I am a polyglot developer with a Masters in Computer Science.
-                                I focus on full stack development and enjoy learning about cyber security
-                                principles and machine learning. After struggling with my resume, I decided
-                                to go a different route and make my own template. I created this resume using ReactJS.
+                                I am a polyglot developer with a Masters in Computer Science. I focus on full-stack development and enjoy learning about cyber security principles and machine learning.
                             </div>
                         </div>
                         <div className="personal">
@@ -127,7 +125,7 @@ export default function Resume() {
                             />
                             <ResumeRow line1="Westat, Atlanta GA​" line2="Programmer Analyst" date="June 2013 - May 2015"
                                        info={`Developed backend and front end services used to monitor and analyze large amounts of data.
-                                    <b> Worked with multiple languages and databases including C#, Java, Android, JavaScript, JQuery, SQL, PostgreSQL, MySQL and SQLite.
+                                    <b> Worked with multiple languages and databases including C#, Java, Android, JavaScript, JQuery, SQL, PostgreSQL, MySQL, and SQLite.
                                     <b> Created data visualization user interfaces using tools such as Google Charts and Google Maps.
                                 `}
                             />
@@ -140,8 +138,8 @@ export default function Resume() {
                         <div className="resume-section">
                             <ResumeHeader title="Education" />
                             <ResumeRow line1="Georgia Institute of Technology" line2="Masters of Science, Computer Science" date="August 2018"
-                            info={` Graduated with a 3.8 GPA.
-                                    <b> Specialized in Computing Systems with a focus on cyber security.
+                                       info={` Graduated with a 3.8 GPA.
+                                    <b> Specialized in Computing Systems with a focus on cybersecurity.
                                     <b> Took classes related to security, machine learning, computational photography, and HCI.
                                     <b> Primary languages used were Python and Java.
                                 `}
