@@ -144,8 +144,7 @@ export default class Projects extends Component {
                                 </div>
                                 <div className="project-information">
                                     <div className="project-description">
-                                        The Android Grocery List application allows users to store a shopping list. I really just put this in here because I do
-                                        Java stuff, even though it isn't on my resume a ton.
+                                        The Android Grocery List application allows users to store a shopping list.
                                     </div>
                                     <div className="project-image-container">
                                         <img src={list} className="project-image-full" />

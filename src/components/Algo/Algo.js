@@ -109,9 +109,6 @@ export default class Algo extends Component {
                                 <SideBar sidebarValues={this.state.sidebarValues} selected={this.state.selected} onSidebarChange={this.onSelectedChanged}/>
                               </Fade>
                               <div>
-                                  <div className="header-container">
-                                      <TopHeader text="Algorithms" lineWidth="line-algo"/>
-                                  </div>
                                   <div className="code-blocks">
                                       <DynamicProgramming selected={this.state.selected} codeLanguageDict={this.state.codeLanguageDict}/>
                                       <Graphs selected={this.state.selected} codeLanguageDict={this.state.codeLanguageDict}/>
