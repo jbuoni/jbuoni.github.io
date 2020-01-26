@@ -7,7 +7,7 @@ const WriteFilePlugin = require('write-file-webpack-plugin');
 const BUILD_DIR = path.resolve(__dirname, 'public');
 const APP_DIR = path.resolve(__dirname, 'src');
 module.exports = {
-  entry: APP_DIR + '/index.js',
+  entry: APP_DIR + '/index.tsx',
   output: {
     path: BUILD_DIR,
     filename: 'js/bundle.js',
@@ -28,6 +28,15 @@ module.exports = {
   ],
   module: {
     rules: [
+      {
+        test: /\.ts(x?)$/,
+        exclude: /node_modules/,
+        use: [
+            {
+                loader: "ts-loader"
+            }
+        ]
+      },
       {
         enforce: 'pre',
         test: /\.js$/,

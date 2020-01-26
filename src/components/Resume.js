@@ -85,6 +85,7 @@ export default function Resume() {
                             <SkillsContainer skill="JavaScript" stars={[1,2,3,4,5]}/>
                             <SkillsContainer skill="Python" stars={[1,2,3,4]}/>
                             <SkillsContainer skill="NodeJS" stars={[1,2,3,5]}/>
+                            <SkillsContainer skill="Typescript" stars={[1,2,3,4]}/>
                             <SkillsContainer skill="Java" stars={[1,2,3]}/>
                             <SkillsContainer skill="C#" stars={[1,2,3]}/>
                             <SkillsContainer skill="Scala" stars={[1,2,3]}/>
