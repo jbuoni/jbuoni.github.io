@@ -85,7 +85,7 @@ export default function Resume() {
                             <SkillsContainer skill="JavaScript" stars={[1,2,3,4,5]}/>
                             <SkillsContainer skill="Python" stars={[1,2,3,4]}/>
                             <SkillsContainer skill="NodeJS" stars={[1,2,3,5]}/>
-                            <SkillsContainer skill="Typescript" stars={[1,2,3,4]}/>
+                            <SkillsContainer skill="TypeScript" stars={[1,2,3,4]}/>
                             <SkillsContainer skill="Java" stars={[1,2,3]}/>
                             <SkillsContainer skill="C#" stars={[1,2,3]}/>
                             <SkillsContainer skill="Scala" stars={[1,2,3]}/>
@@ -93,6 +93,8 @@ export default function Resume() {
                             <SkillsContainer skill="SQL" stars={[1,2,3]}/>
                             <SkillsContainer skill="PostgreSQL" stars={[1,2,3]}/>
                             <SkillsContainer skill="MongoDB" stars={[1,2]}/>
+                            <SkillsContainer skill="Docker" stars={[1,2]}/>
+                            <SkillsContainer skill="Kubernetes" stars={[1,2]}/>
                             <SkillsContainer skill="Ruby" stars={[1,2]}/>
                             <SkillsContainer skill="AWS" stars={[1]}/>
                             <SkillsContainer skill="Backbone" stars={[1]}/>
@@ -115,7 +117,12 @@ export default function Resume() {
                     <div className="resume-mid">
                         <div className="resume-section">
                             <ResumeHeader title="Experience" />
-                            <ResumeRow line1="Turner Broadcasting Inc., Atlanta GA" line2="Senior Software Developer" date="May 2015 - Present"
+                            <ResumeRow line1="Honeywell, Atlanta GA" line2="Senior Software Engineer" date="September 2019 - Present"
+                                       info={` Using TypeScript, I develop and maintain Honeywell Forge Platform APIs and CLI tools used to produce IoT applications.
+                                       <b> Assist in DevOps related tasks using Docker, Kubernetes, Openshift, as well as other deployment tools.
+                                `}
+                            />
+                            <ResumeRow line1="Turner Broadcasting Inc., Atlanta GA" line2="Senior Software Developer" date="May 2015 - September 2019"
                                        info={` Developed backend and frontend services used to transfer video files and metadata to CNN and Turner internal systems around the world.
                                     <b> Worked as a member of a scrum team for multiple high visibility projects including the Elections System and Content Supply Chain.
                                     <b> Worked with mulitple languages and frameworks throughout the day such as NodeJS, React, Scala, Java, Python, and MongoDB.
@@ -127,7 +134,6 @@ export default function Resume() {
                             <ResumeRow line1="Westat, Atlanta GA​" line2="Programmer Analyst" date="June 2013 - May 2015"
                                        info={`Developed backend and front end services used to monitor and analyze large amounts of data.
                                     <b> Worked with multiple languages and databases including C#, Java, Android, JavaScript, JQuery, SQL, PostgreSQL, MySQL, and SQLite.
-                                    <b> Created data visualization user interfaces using tools such as Google Charts and Google Maps.
                                 `}
                             />
                             <ResumeRow line1="Mary Cariola Children’s Center, Rochester New York" line2="Website Developer" date="December 2012 – May 2013" />
@@ -138,13 +144,7 @@ export default function Resume() {
                         </div>
                         <div className="resume-section">
                             <ResumeHeader title="Education" />
-                            <ResumeRow line1="Georgia Institute of Technology" line2="Masters of Science, Computer Science" date="August 2018"
-                                       info={` Graduated with a 3.8 GPA.
-                                    <b> Specialized in Computing Systems with a focus on cybersecurity.
-                                    <b> Took classes related to security, machine learning, computational photography, and HCI.
-                                    <b> Primary languages used were Python and Java.
-                                `}
-                            />
+                            <ResumeRow line1="Georgia Institute of Technology" line2="Masters of Science, Computer Science, 3.8 GPA" date="August 2018" />
                             <ResumeRow line1="Rochester Institute of Technology" line2="Bachelors of Science, Software Engineering, Economics Minor" date="May 2013"/>
                         </div>
                     </div>

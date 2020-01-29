@@ -52,9 +52,9 @@ export default class Projects extends Component {
                                 <div className="circle">
                                     <i className="fab fa-node fa-5x node"></i>
                                 </div>
-                                <div className="circle">
+                                {/* <div className="circle">
                                     <i className="fab fa-android fa-6x android"></i>
-                                </div>
+                                </div> */}
                                 <div className="circle">
                                     <i className="fab fa-react fa-6x react"></i>
                                 </div>
