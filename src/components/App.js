@@ -5,15 +5,14 @@ import { isIE, isMobile } from 'react-device-detect';
 // Regular
 import About from './About';
 import Algo from './Algo';
-import Projects from './Projects';
+import { Projects, MobileProjects } from './Projects';
 import Landing from './Landing';
 import Resume from './Resume';
-import NavigationBar from './Navigation';
+import { NavigationBar, NavigationMobile } from './Navigation';
 import Footer from './Footer';
 // Mobile
 import MobileAbout from './MobileAbout';
-import MobileNav from './MobileNav';
-import MobileProjects from './ProjectsMobile';
+// import MobileProjects from './ProjectsMobile';
 
 function HomeWrapped() {
     document.body.style.overflow = 'auto';
@@ -21,7 +20,7 @@ function HomeWrapped() {
     if(isMobile) {
         return (
             <>
-                <MobileNav />
+                <NavigationMobile />
                 <MobileAbout/>
                 <>
                     <div className="footer">
@@ -43,20 +42,6 @@ function HomeWrapped() {
 
 function AlgoWrapped() {
     document.body.style.overflow = 'auto';
-
-    if(isMobile) {
-        return (
-            <>
-                <MobileNav />
-                <MobileAbout/>
-                <>
-                    <div className="footer">
-                    </div>
-                </>
-            </>
-        );
-    }
-
     return (
         <>
             <div className="site-header">
@@ -75,7 +60,7 @@ function ProjectsWrapped() {
         document.body.style.overflowX = 'hidden';
         return (
             <>
-                <MobileNav />
+                <NavigationMobile />
                 <MobileProjects/>
                 <>
                     <div className="footer">
@@ -100,8 +85,6 @@ function LandingWrapped() {
     document.body.style.overflow = 'hidden';
     return <Landing/>
 }
-
-
 
 export default function App() {
     return (

@@ -50,9 +50,6 @@ export default class MobileProjects extends Component {
                                     <i className="fab fa-java fa-5x java"></i>
                                 </div>
                                 <div className="circle-mobile">
-                                    <i className="fab fa-android fa-5x android"></i>
-                                </div>
-                                <div className="circle-mobile">
                                     <i className="fab fa-react fa-5x react"></i>
                                 </div>
                             </div>

@@ -6,7 +6,7 @@ import Social from './Social';
 import Experience from './Experience';
 import TopHeader from './TopHeader';
 
-function Icon({ faIcon, title, exp}) {
+const Icon = ({ faIcon, title, exp}) => {
     return (
         <div className="icon-container">
             <div className="circle">
@@ -16,9 +16,9 @@ function Icon({ faIcon, title, exp}) {
             <div className="middle-exp">{exp}</div>
         </div>
     )
-}
+};
 
-function Photo() {
+const Photo = () => {
     return (
         <div className="octo">
             <div className="octo1">
@@ -26,20 +26,14 @@ function Photo() {
             </div>
         </div>
     );
-}
+};
+
+const clickFarm = (e) => {
+    const win = window.open('http://lachenbockfarm.com/', '_blank');
+    win.focus();
+};
 
 export default class About extends Component {
-    constructor(props) {
-        super(props);
-
-        this.clickFarm = this.clickFarm.bind(this);
-
-    }
-
-    clickFarm(e) {
-        const win = window.open('http://lachenbockfarm.com/', '_blank');
-        win.focus();
-    }
 
     render() {
         return (
@@ -62,7 +56,7 @@ export default class About extends Component {
                                 <div className="about-text">
                                     <h3 className="about-h1">Who's This Guy?</h3>
                                     I am a full stack developer who loves just about every language not named C. After spending years in the Rochester tundra, I was able to earn my undergrad from RIT. Once I moved to the tropics in Atlanta, I worked to obtain my Masters from Georgia Tech. I am also a pet enthusiast, and will always have multiple pets in my house at any given time. I also have very loving parents who raise Nubian Goats and Great Pyrenees puppies. One day I'll redo their website, but for now you can see it
-                                    <span  className="item-hover" onClick={this.clickFarm}><i> here.</i></span>
+                                    <span  className="item-hover" onClick={clickFarm}><i> here.</i></span>
                                 </div>
                             </Fade>
                         </div>
