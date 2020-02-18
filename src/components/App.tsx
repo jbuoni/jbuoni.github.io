@@ -1,5 +1,5 @@
 // Libs
-import React, { ReactElement } from 'react';
+import React, { FC, ReactElement } from 'react';
 import { HashRouter, Switch, Redirect, Route } from 'react-router-dom';
 import { isIE, isMobile } from 'react-device-detect';
 // Regular
@@ -15,7 +15,7 @@ import MobileAbout from './MobileAbout';
 import MobileNav from './MobileNav';
 import MobileProjects from './ProjectsMobile';
 
-function HomeWrapped(): ReactElement  {
+function HomeWrapped(): FC  {
 	document.body.style.overflow = 'auto';
 
 	if (isMobile) {
@@ -41,7 +41,7 @@ function HomeWrapped(): ReactElement  {
 	);
 }
 
-function AlgoWrapped(): ReactElement {
+function AlgoWrapped(): FC {
 	document.body.style.overflow = 'auto';
 
 	if (isMobile) {
@@ -68,7 +68,7 @@ function AlgoWrapped(): ReactElement {
 	);
 }
 
-function ProjectsWrapped(): ReactElement {
+function ProjectsWrapped(): FC {
 	document.body.style.overflow = 'auto';
 
 	if (isMobile) {
@@ -96,25 +96,35 @@ function ProjectsWrapped(): ReactElement {
 	);
 }
 
-function LandingWrapped(): ReactElement {
+function LandingWrapped(): FC {
 	document.body.style.overflow = 'hidden';
 	return <Landing/>;
 }
 
-export default function App(): ReactElement {
+export default function App(): FC {
 	return (
-		<HashRouter>
-			<div className='site-content'>
-				<Switch>
-					<Route exact path='/' render={() => <Redirect to='/landing' />} />
-					<Route path='/about' component={() => <HomeWrapped />}/>
-					<Route path='/algo' component={() => <AlgoWrapped />}/>
-					<Route path='/proj' component={() => <ProjectsWrapped />}/>
-					<Route path='/landing' component={() => <LandingWrapped />} />
-					<Route path='/resume' component={() => <Resume />} />
-					<Route render={() => <Redirect to='/landing' />} />
-				</Switch>
-			</div>
-		</HashRouter>
+
 	);
+}
+
+export default class App extends React.Component<any, {}> {
+	render() {
+		return (
+			<>
+				<HashRouter>
+					<div className='site-content'>
+						<Switch>
+							<Route exact path='/' render={() => <Redirect to='/landing' />} />
+							{/* <Route path='/about' component={() => <HomeWrapped />}/>
+							<Route path='/algo' component={() => <AlgoWrapped />}/>
+							<Route path='/proj' component={() => <ProjectsWrapped />}/>
+							<Route path='/landing' component={() => <LandingWrapped />} />
+							<Route path='/resume' component={() => <Resume />} /> */}
+							<Route render={() => <Redirect to='/landing' />} />
+						</Switch>
+					</div>
+				</HashRouter>
+			</>
+		);
+	}
 }
