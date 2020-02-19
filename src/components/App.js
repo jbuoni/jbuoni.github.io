@@ -3,9 +3,9 @@ import React from 'react';
 import { HashRouter, Switch, Redirect, Route } from 'react-router-dom';
 import { isIE, isMobile } from 'react-device-detect';
 // Regular
-import { About, MobileAbout } from './About/';
+import { About, AboutMobile } from './About';
 import Algo from './Algo';
-import { Projects, MobileProjects } from './Projects';
+import { Projects, ProjectsMobile } from './Projects';
 import Landing from './Landing';
 import Resume from './Resume';
 import { NavigationBar, NavigationMobile } from './Navigation';
@@ -18,7 +18,7 @@ function HomeWrapped() {
         return (
             <>
                 <NavigationMobile />
-                <MobileAbout/>
+                <AboutMobile />
                 <>
                     <div className="footer">
                     </div>
@@ -58,7 +58,7 @@ function ProjectsWrapped() {
         return (
             <>
                 <NavigationMobile />
-                <MobileProjects/>
+                <ProjectsMobile />
                 <>
                     <div className="footer">
                     </div>
@@ -72,7 +72,7 @@ function ProjectsWrapped() {
             <div className="site-header">
                 <NavigationBar />
             </div>
-            <Projects/>
+            <Projects />
             <Footer />
         </>
     );
@@ -80,7 +80,7 @@ function ProjectsWrapped() {
 
 function LandingWrapped() {
     document.body.style.overflow = 'hidden';
-    return <Landing/>
+    return <Landing />
 }
 
 export default function App() {

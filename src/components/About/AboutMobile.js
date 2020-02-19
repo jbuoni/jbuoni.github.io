@@ -6,7 +6,7 @@ import TopHeader from '../TopHeader';
 import Social from '../Social'
 import { clickFarm, Photo } from './aboutUtils';
 
-const MobileAbout = () => {
+const AboutMobile = () => {
     return (
         <div className="about-content-mobile">
             <TopHeader text="About"/>
@@ -36,4 +36,4 @@ const MobileAbout = () => {
     );
 }
 
-export default MobileAbout;
+export default AboutMobile;

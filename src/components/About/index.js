@@ -1,4 +1,4 @@
-import MobileAbout from './MobileAbout';
+import AboutMobile from './AboutMobile';
 import About from './About';
 
-export { About, MobileAbout };
+export { About, AboutMobile };
