@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-function SidebarCategory({ category, values,onSidebarChange, selected }) {
+function SidebarCategory({ category, values, onSidebarChange, selected }) {
     return (
       <div className="sidebar-category">
           <div className="sidebar-name"><i>{category}</i></div>
@@ -19,42 +19,29 @@ function SidebarCategory({ category, values,onSidebarChange, selected }) {
     );
 }
 
-export default class Sidebar extends Component {
-    constructor(props) {
-        super(props);
-        this.onSidebarChange = this.onSidebarChange.bind(this);
-    }
 
-    state = {
-        selected: this.props.selected
+const Sidebar = (props) => {
+    const { selected: selectedProps, sidebarValues, onSidebarChange } = props;
+    const [selected, onSelectedChanged] = useState(selectedProps);
+
+    const sidebarChange = (value) => {
+        onSelectedChanged(value);
+        onSidebarChange(value)
     };
 
-    static propTypes = {
-        sidebarValues: PropTypes.array.isRequired,
-        onSidebarChange: PropTypes.func.isRequired,
-        selected: PropTypes.string.isRequired,
-    };
+    return (
+        <div className="sidebar-container">
+            {sidebarValues.map((item, idx) =>
+                <SidebarCategory key={idx} category={item.category} values={item.values} onSidebarChange={sidebarChange} selected={selected}/>)
+            }
+        </div>
+    );
+};
 
-    componentDidUpdate(prevProps, prevState) {
-        if(prevState.selected !== this.props.selected) {
-            this.setState({ selected: this.props.selected });
-        }
-    }
+Sidebar.propTypes = {
+    sidebarValues: PropTypes.array.isRequired,
+    onSidebarChange: PropTypes.func.isRequired,
+    selected: PropTypes.string.isRequired,
+};
 
-    onSidebarChange(val) {
-        this.setState({ selectedValue: val }, () => this.props.onSidebarChange(val));
-    }
-
-    render() {
-        const { selected } = this.state;
-        return (
-            <div className="sidebar-container">
-                {this.props.sidebarValues.map((item, idx) =>
-                    <SidebarCategory key={idx} category={item.category} values={item.values} onSidebarChange={this.onSidebarChange} selected={selected}/>)
-                }
-            </div>
-        );
-    }
-}
-
-
+export default Sidebar;
