@@ -51,7 +51,7 @@ function SkillsContainer({ skill, stars }) {
     );
 }
 
-export default function Resume() {
+const Resume = () => {
     return (
         <>
             <div className="resume-overlay"></div>
@@ -152,6 +152,8 @@ export default function Resume() {
             </div>
         </>
     );
-}
+};
+
+export default Resume;
 
 
