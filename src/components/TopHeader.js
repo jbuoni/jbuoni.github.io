@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-export default function TopHeader({ text, lineWidth }) {
+const TopHeader = ({ text, lineWidth }) => {
     return (
         <Fade top>
             <div className="header-top">
@@ -10,5 +10,7 @@ export default function TopHeader({ text, lineWidth }) {
             </div>
         </Fade>
     );
-}
+};
+
+export default TopHeader;
 

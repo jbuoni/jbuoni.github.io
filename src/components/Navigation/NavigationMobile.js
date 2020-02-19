@@ -1,49 +1,53 @@
-import React, { useReducer } from 'react';
+import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 
-const url = window.location.href;
-
-const init = () => {
-    return { menuIsOpen: false, redirect: false, page: '' };
-};
-
-const reducer = (state, action) => {
-    const { type, payload } = action;
-    const { menuIsOpen } = state;
-
-    switch (type) {
-        case 'toggle':
-            return { menuIsOpen: !menuIsOpen };
-        case 'redirect':
-            return { page: `/${payload}`, redirect: true, currentTab: payload };
-        default:
-            throw new Error(`Invalid action in MobileNav ${type}`);
+/**
+ * This is absolutley painful using useState due to the challagnes forcing a rerender. Just use
+ * the old way
+ */
+export default class NavigationMobile extends Component {
+    constructor(props) {
+        super(props);
+        this.toggleMenu = this.toggleMenu.bind(this);
     }
-};
 
-const NavigationMobile = () => {
-    const [state, dispatch] = useReducer(reducer, null, init);
+    state = {
+        menuIsOpen: false,
+        currentTab: '',
+        redirect: false,
+        page: ''
+    };
 
-    const { page, redirect, menuIsOpen } = state;
-    const mobileTab = url.split('/').pop();
+    componentDidMount() {
+        const url = window.location.href;
+        const currentTab = url.split('/').pop();
+        this.setState({ currentTab });
+    }
 
-    if (redirect) return <Redirect push to={page} />;
 
-    return (
-        <div className="nav-bar-mobile">
-            <div className="navbar-link navbar-link-toggle" onClick={() => dispatch({ type: 'toggle' })}>
-                <i className="fas fa-bars burger"></i>
+    toggleMenu = () => this.setState({ menuIsOpen: !this.state.menuIsOpen });
+
+    redirect = (page) => this.setState( { redirect: true, page });
+
+    render () {
+        const { currentTab, redirect, page } = this.state;
+
+        if (redirect) return <Redirect push to={page} />;
+
+        return (
+            <div className="nav-bar-mobile">
+                <div className="navbar-link navbar-link-toggle" onClick={this.toggleMenu}>
+                    <i className="fas fa-bars burger"></i>
+                </div>
+                {
+                    this.state.menuIsOpen &&
+                    <nav className="navbar-items">
+                        <div className={`nav nav-link ${currentTab === 'landing' && 'nav-selected' || ''}`} onClick={() => this.redirect('/landing')}>Jason Buoni</div>
+                        <div className={`nav nav-link ${currentTab === 'about' && 'nav-selected' || ''}`}onClick={() => this.redirect('/about')}>About</div>
+                        <div className={`nav nav-link ${currentTab === 'proj' && 'nav-selected' || ''}`}onClick={() => this.redirect('/proj')}>Projects</div>
+                    </nav>
+                }
             </div>
-            {
-                menuIsOpen &&
-                <nav className="navbar-items">
-                    <div className={`nav nav-link ${mobileTab === 'landing' && 'nav-selected' || ''}`} onClick={() => dispatch({ type: 'redirect', payload: 'landing' })}>Jason Buoni</div>
-                    <div className={`nav nav-link ${mobileTab === 'about' && 'nav-selected' || ''}`} onClick={() => dispatch({ type: 'redirect', payload: 'about' })}>About</div>
-                    <div className={`nav nav-link ${mobileTab === 'proj' && 'nav-selected' || ''}`} onClick={() => dispatch({ type: 'redirect', payload: 'proj' })}>Projects</div>
-                </nav>
-            }
-        </div>
-    );
-};
-
-export default NavigationMobile;
+        );
+    }
+}

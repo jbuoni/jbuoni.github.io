@@ -13,9 +13,7 @@ export default class NavigationBar extends Component {
         this.onSelectedChanged = this.onSelectedChanged.bind(this);
     }
 
-    state = {
-        currentTab: ''
-    };
+    state = { currentTab: '' };
 
     componentDidMount() {
         const url = window.location.href;

@@ -1,7 +1,13 @@
 import React from 'react';
-import { onBitbucketClick, onFacebookClick, onGithubClick, onLinkedInClick, onStackOverflowClick } from '../utils/navUtils';
+import {
+    onBitbucketClick,
+    onFacebookClick,
+    onGithubClick,
+    onLinkedInClick,
+    onStackOverflowClick
+} from '../utils/navUtils';
 
-export default function Social({ displayText=true }) {
+const Social = ({ displayText=true }) => {
     return (
         <div className="about-panel">
             <h3 className="home-h3">Social</h3>
@@ -21,7 +27,7 @@ export default function Social({ displayText=true }) {
                 <div className="item-hover" onClick={onBitbucketClick}>
                     <i className="fab fa-bitbucket fa-2x icon" aria-hidden="true"></i>
                     { displayText &&
-                    <span className="h5 header-font social-link">Bitbucket</span>
+                        <span className="h5 header-font social-link">Bitbucket</span>
                     }
                 </div>
                 <div className="item-hover" onClick={onStackOverflowClick}>
@@ -40,4 +46,6 @@ export default function Social({ displayText=true }) {
             </div>
         </div>
     );
-}
+};
+
+export default Social;
