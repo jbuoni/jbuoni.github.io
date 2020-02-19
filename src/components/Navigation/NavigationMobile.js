@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 
-export default class MobileNav extends Component {
+/**
+ * This is absolutley painful using useState due to the challagnes forcing a rerender. Just use
+ * the old way
+ */
+export default class NavigationMobile extends Component {
     constructor(props) {
         super(props);
         this.toggleMenu = this.toggleMenu.bind(this);
@@ -21,20 +25,14 @@ export default class MobileNav extends Component {
     }
 
 
-    toggleMenu() {
-        this.setState({ menuIsOpen: !this.state.menuIsOpen })
-    }
+    toggleMenu = () => this.setState({ menuIsOpen: !this.state.menuIsOpen });
 
-    redirect(page) {
-        this.setState( { redirect: true, page })
-    }
+    redirect = (page) => this.setState( { redirect: true, page });
 
     render () {
         const { currentTab, redirect, page } = this.state;
 
-        if(redirect) {
-            return <Redirect push to={page} />;
-        }
+        if (redirect) return <Redirect push to={page} />;
 
         return (
             <div className="nav-bar-mobile">

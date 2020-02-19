@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+/**
+ * This is absolutley painful using useState due to the challagnes forcing a rerender. Just use
+ * the old way
+ */
 export default class NavigationBar extends Component {
 
     constructor(props) {
@@ -9,9 +13,7 @@ export default class NavigationBar extends Component {
         this.onSelectedChanged = this.onSelectedChanged.bind(this);
     }
 
-    state = {
-        currentTab: ''
-    };
+    state = { currentTab: '' };
 
     componentDidMount() {
         const url = window.location.href;
@@ -19,14 +21,9 @@ export default class NavigationBar extends Component {
         this.setState({ currentTab });
     }
 
-    onHackerRankClick(e) {
-        this.setState({ currentTab: 'hack' }, () => window.location = 'https://www.hackerrank.com/JBuoni?hr_r=1' );
-    }
+    onHackerRankClick = (e) => this.setState({ currentTab: 'hack' }, () => window.location = 'https://www.hackerrank.com/JBuoni?hr_r=1' );
 
-
-    onSelectedChanged(currentTab) {
-        this.setState({ currentTab });
-    }
+    onSelectedChanged = (currentTab) => this.setState({ currentTab });
 
     render() {
         const { currentTab } = this.state;
@@ -48,7 +45,6 @@ export default class NavigationBar extends Component {
                             <Link onClick={() => this.onSelectedChanged('proj')} to="/proj" >Projects</Link>
                         </span>
                         <span className={`nav nav-link ${currentTab === 'hack' && 'nav-selected' || ''}`} onClick={this.onHackerRankClick}>HackerRank</span>
-                        {/*<span className={`nav nav-link ${currentTab === 'resume' && 'nav-selected' || ''}`} onClick={this.onResumeClick}>Resume</span>*/}
                         <span className={`nav nav-link ${currentTab === 'resume' && 'nav-selected' || ''}`}>
                             <Link onClick={() => this.onSelectedChanged('proj')} to="/resume" >Resume</Link>
                         </span>
