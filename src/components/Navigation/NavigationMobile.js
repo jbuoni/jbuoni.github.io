@@ -45,6 +45,7 @@ export default class NavigationMobile extends Component {
                         <div className={`nav nav-link ${currentTab === 'landing' && 'nav-selected' || ''}`} onClick={() => this.redirect('/landing')}>Jason Buoni</div>
                         <div className={`nav nav-link ${currentTab === 'about' && 'nav-selected' || ''}`}onClick={() => this.redirect('/about')}>About</div>
                         <div className={`nav nav-link ${currentTab === 'proj' && 'nav-selected' || ''}`}onClick={() => this.redirect('/proj')}>Projects</div>
+                        <div className={`nav nav-link ${currentTab === 'mentees' && 'nav-selected' || ''}`}onClick={() => this.redirect('/mentees')}>Mentorship</div>
                     </nav>
                 }
             </div>

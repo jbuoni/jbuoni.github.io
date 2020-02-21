@@ -44,6 +44,9 @@ export default class NavigationBar extends Component {
                         <span className={`nav nav-link ${currentTab === 'proj' && 'nav-selected' || ''}`}>
                             <Link onClick={() => this.onSelectedChanged('proj')} to="/proj" >Projects</Link>
                         </span>
+                        <span className={`nav nav-link ${currentTab === 'mentees' && 'nav-selected' || ''}`}>
+                            <Link onClick={() => this.onSelectedChanged('mentees')} to="/mentees" >Mentorship</Link>
+                        </span>
                         <span className={`nav nav-link ${currentTab === 'hack' && 'nav-selected' || ''}`} onClick={this.onHackerRankClick}>HackerRank</span>
                         <span className={`nav nav-link ${currentTab === 'resume' && 'nav-selected' || ''}`}>
                             <Link onClick={() => this.onSelectedChanged('proj')} to="/resume" >Resume</Link>

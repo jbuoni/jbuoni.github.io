@@ -5,7 +5,7 @@ import {
     onGithubClick,
     onLinkedInClick,
     onStackOverflowClick
-} from '../utils/navUtils';
+} from '../utils/outsideSiteUtils';
 
 export default class Footer extends Component {
     constructor(props) {

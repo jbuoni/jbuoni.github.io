@@ -4,6 +4,7 @@ import { HashRouter, Switch, Redirect, Route } from 'react-router-dom';
 import { isIE, isMobile } from 'react-device-detect';
 // Regular
 import { About, AboutMobile } from './About';
+import { Mentees, MenteesMobile } from './Mentees';
 import Algo from './Algo';
 import { Projects, ProjectsMobile } from './Projects';
 import Landing from './Landing';
@@ -45,6 +46,33 @@ function AlgoWrapped() {
                 <NavigationBar />
             </div>
             <Algo/>
+            <Footer />
+        </>
+    );
+}
+
+function MenteesWrapped() {
+    document.body.style.overflow = 'auto';
+    if(isMobile) {
+        document.body.style.overflowX = 'hidden';
+        return (
+            <>
+                <NavigationMobile />
+                <MenteesMobile />
+                <>
+                    <div className="footer">
+                    </div>
+                </>
+            </>
+        );
+    }
+
+    return (
+        <>
+            <div className="site-header">
+                <NavigationBar />
+            </div>
+            <Mentees />
             <Footer />
         </>
     );
@@ -92,6 +120,7 @@ export default function App() {
                     <Route path="/about" component={() => <HomeWrapped />}/>
                     <Route path="/algo" component={() => <AlgoWrapped />}/>
                     <Route path="/proj" component={() => <ProjectsWrapped />}/>
+                    <Route path="/mentees" component={() => <MenteesWrapped />}/>
                     <Route path="/landing" component={() => <LandingWrapped />} />
                     <Route path="/resume" component={() => <Resume />} />
                     <Route render={() => <Redirect to="/landing" />} />
