@@ -47,10 +47,12 @@ const Profile = (props) => {
             <div className="profile-content">
                 <div className="overview">
                     <div className="info">
-                        <h4>{name}  <i className={`${fontAwesomeClass}`} onClick={() => navigateToSite(website)}></i></h4>
+                        <h4>{name} &nbsp; 
+                            <i className={`${fontAwesomeClass} hover`} onClick={() => navigateToSite(website)} ></i>
+                        </h4>
                         <div className="title"><h5><i>{title}</i></h5></div>
                         <div className="org-container">
-                            <img className="pic" src={companyPic} onClick={() => navigateToSite(companyWebsite)} />
+                            <img className="pic hover" src={companyPic} onClick={() => navigateToSite(companyWebsite)} />
                             <img className="pic school-pic" src={schoolPic} />
                         </div>
                     </div>
