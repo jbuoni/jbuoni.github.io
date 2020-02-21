@@ -1,5 +1,5 @@
 import React from 'react';
-import me from '../../images/me.jpg';
+import me from '../../images/me_new.jpg';
 import '../../styles/about.less';
 
 export const Icon = ({ faIcon, title, exp}) => {
@@ -13,6 +13,22 @@ export const Icon = ({ faIcon, title, exp}) => {
         </div>
     )
 };
+
+export const WhoAmI = () => {
+    return (
+        <div className="about-text">
+            <h3 className="about-h1">Who's This Guy?</h3>
+            I am a full stack developer who loves just about every language not named C. 
+            After spending years in the Rochester tundra, I was able to earn my undergrad from RIT. 
+            Once I moved to the tropics in Atlanta, I worked to obtain my Masters from Georgia Tech. 
+            I am also a pet enthusiast, and will always have multiple pets in my house at any given time. 
+            My parents raise Nubian Goats and Great Pyrenees puppies. One day I'll redo their website, but for now you can see it
+            <span  className="item-hover" onClick={clickFarm}><i> here.</i></span> 
+            The baby's name is David and he is not mine, but is like a nephew to me. 
+            He currently loves keys, dinosaurs, and his fish tank.
+        </div>
+    );
+}
 
 export const Photo = () => {
     return (

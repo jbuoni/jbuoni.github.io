@@ -4,7 +4,7 @@ import '../../styles/mobile.less';
 import Experience from '../Experience';
 import TopHeader from '../TopHeader';
 import Social from '../Social'
-import { clickFarm, Photo } from './aboutUtils';
+import { WhoAmI, Photo } from './aboutUtils';
 
 const AboutMobile = () => {
     return (
@@ -16,11 +16,7 @@ const AboutMobile = () => {
                         <Photo/>
                     </Fade>
                     <Fade bottom>
-                        <div className="about-text">
-                            <h3 className="about-h1">Who's This Guy?</h3>
-                            I am a full stack developer who loves just about every language not named C. After spending years in the Rochester tundra, I was able to earn my undergrad from RIT. Once I moved to the tropics in Atlanta, I worked to obtain my Masters from Georgia Tech. I am also a pet enthusiast, and will always have multiple pets in my house at any given time. I also have very loving parents who raise Nubian Goats and Great Pyrenees puppies. One day I'll redo their website, but for now you can see it
-                            <span  className="item-hover" onClick={clickFarm}><i> here.</i></span>
-                        </div>
+                        <WhoAmI />
                     </Fade>
                 </div>
                 <div className="col">
