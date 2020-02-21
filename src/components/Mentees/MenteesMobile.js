@@ -8,7 +8,7 @@ const MenteesMobile = () => {
         <>
             <div className="top">
                 <div className="header-container">
-                    <TopHeader text="Mentees" lineWidth="line"/>
+                    <TopHeader text="Mentorship" lineWidth="mentorship-line"/>
                 </div>
             </div>
             <main className="container p3 ">
