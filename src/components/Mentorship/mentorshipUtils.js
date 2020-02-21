@@ -16,8 +16,7 @@ export const Philosophy = ({ isDesktop=true }) => {
                     met my mentor Carol, who beleived im myself and my abilities, and in doing so allowed me to grow and build my own 
                     confidence. I can say that I would not be where I am today if I didn't have her mentor me. As a way to give back, I try 
                     to pass on what was done to me. In doing so, I have grown dramatically in my career, as well as outside of the software 
-                    world. The mentees I continue to keep in contact with have given me way more than I can ever give to them.
-                    <br />
+                    world. The mentees I continue to keep in contact with have given me way more than I can ever give to them. 
                     Though I am no expert, and I don't have the process down to a science I focus on some key ideas. 
                 </p> 
             </Fade>
@@ -26,10 +25,12 @@ export const Philosophy = ({ isDesktop=true }) => {
                     <b>Belief:</b> In my opinion, the most important factor in a good mentor is the ability to not only believe in your mentee but 
                     being able to express that belief in a way that is genuine. I try to make a point to demonstrate to my mentees that I 
                     want what is best for them, and not what will be best for me. Not only does this give them a safe individual to bring 
-                    questions and concerns to, but it also helps me to get a better perspective of who they are as a person.
+                    questions and concerns to, but it also helps me to get a better perspective of who they are as a person, and helps me to connet and 
+                    empathise with them on a personal level. Letting them set goals, working with them to achieve those goals, and being a part of their 
+                    development is one of the most rewarding experiences I have had.
                 </p>
                 <p>
-                    <b>Effort:</b> Finding time to focus on working with them, or just for them to talk is also very important. Many of mine 
+                    <b>Effort:</b> Finding time to focus on working with them, or just for them to connect with me is also very important. Many of mine 
                     have moved on to bigger and better things, so it can be a struggle to keep in contact, but I try to schedule at least a few 
                     times where I can meet with them and focus on how they are doing. Though I do love seeing them, this is also very beneficial 
                     for me because I find that spending time focusing on someone who is not me helps me become a better person.
