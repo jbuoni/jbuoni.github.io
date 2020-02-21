@@ -1,6 +1,11 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
+export const navigateToSite = (site) => {
+    const win = window.open(site, '_blank');
+    win.focus();
+};
+
 export const Philosophy = ({ isDesktop=true }) => {
     return (
         <div className="mentee-description">

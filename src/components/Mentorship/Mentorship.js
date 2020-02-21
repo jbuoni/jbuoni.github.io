@@ -1,8 +1,8 @@
 import React from 'react';
-import { Philosophy } from './menteeUtils';
+import { Philosophy, navigateToSite } from './mentorshipUtils';
 import TopHeader from '../TopHeader';
 import Fade from 'react-reveal/Fade';
-import '../../styles/mentees.less';
+import '../../styles/mentorship.less';
 // Peeps
 import bo from '../../images/bo.jpeg';
 import laura from '../../images/laura.jpeg';
@@ -20,12 +20,6 @@ import parkmobile from '../../images/parkmobile.png';
 import tech from '../../images/tech.png';
 import state from '../../images/state.png';
 import uga from '../../images/uga.png';
-
-
-const navigateToSite = (site) => {
-    const win = window.open(site, '_blank');
-    win.focus();
-};
 
 const Profile = (props) => {
     const { 

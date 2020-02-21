@@ -4,7 +4,7 @@ import { HashRouter, Switch, Redirect, Route } from 'react-router-dom';
 import { isIE, isMobile } from 'react-device-detect';
 // Regular
 import { About, AboutMobile } from './About';
-import { Mentees, MenteesMobile } from './Mentees';
+import { Mentorship, MentorshipMobile } from './Mentorship';
 import Algo from './Algo';
 import { Projects, ProjectsMobile } from './Projects';
 import Landing from './Landing';
@@ -58,7 +58,7 @@ function MenteesWrapped() {
         return (
             <>
                 <NavigationMobile />
-                <MenteesMobile />
+                <MentorshipMobile />
                 <>
                     <div className="footer">
                     </div>
@@ -72,7 +72,7 @@ function MenteesWrapped() {
             <div className="site-header">
                 <NavigationBar />
             </div>
-            <Mentees />
+            <Mentorship />
             <Footer />
         </>
     );
