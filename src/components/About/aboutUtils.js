@@ -34,7 +34,7 @@ export const Photo = () => {
     return (
         <div className="octo">
             <div className="octo1">
-                <img src={me} width="320" height="316" />
+                <img className="photo" src={me}/>
             </div>
         </div>
     );
