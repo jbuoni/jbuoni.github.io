@@ -51,17 +51,14 @@ export const Philosophy = ({ isDesktop=true }) => {
                     will be more inclined to think for themselves and to explore their own approach to every problem.  
                 </p>
             </Fade>
-            {
-                isDesktop &&
-                <Fade right>
-                    <p>
-                        So now that you have gotten this far, why don't I show you some of the amazing people I have had the opportunity to mentor? 
-                        Let's be honest here, you are probably looking at this page because you are a friend of mine, or considering hiring me. 
-                        Maybe you like me, maybe you don't but either way, if you are looking for some amazing software developers, and even better 
-                        people, why not connect with them?
-                    </p>
-                </Fade>
-            }
+            <Fade right>
+                <p>
+                    So now that you have gotten this far, why don't I show you some of the amazing people I have had the opportunity to mentor? 
+                    Let's be honest here, you are probably looking at this page because you are a friend of mine, or considering hiring me. 
+                    Maybe you like me, maybe you don't but either way, if you are looking for some amazing software developers, and even better 
+                    people, why not connect with them?
+                </p>
+            </Fade>
         </div>
     );
 }

@@ -104,7 +104,8 @@ const Projects = () => {
                     <Fade left>
                         <div className="col sm-col-7 android-list col-border">
                             <div className="project-title">
-                                <h2>Georgia Tech Scheduler</h2><RepoLink link='https://github.com/jbuoni/GeorgiaTechScheduler' repoType='github'/>
+                                <h2>Georgia Tech Scheduler</h2>
+                                <RepoLink link='https://github.com/jbuoni/GeorgiaTechScheduler' repoType='github'/>
                                 <div className="project-tool-container">
                                     <i className="fab fa-python fa-2x python"></i>
                                     <i className="fab fa-js fa-2x python"></i>
@@ -127,7 +128,8 @@ const Projects = () => {
                     <Fade left>
                         <div className="col sm-col-7 android-list col-bottom">
                             <div className="project-title">
-                                <h2>Shopping List</h2><RepoLink link='https://github.com/jbuoni/Android-Grocery-List' repoType='github'/>
+                                <h2>Shopping List</h2>
+                                <RepoLink link='https://github.com/jbuoni/Android-Grocery-List' repoType='github'/>
                                 <div className="project-tool-container">
                                     <i className="fab fa-java fa-2x"></i>
                                     <i className="fab fa-android fa-2x"></i>
