@@ -1,9 +1,9 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import '../../styles/mobile.less';
-import Experience from '../Experience';
+import Experience from './Experience';
 import TopHeader from '../TopHeader';
-import Social from '../Social'
+import Social from './Social'
 import { WhoAmI, Photo } from './aboutUtils';
 
 const AboutMobile = () => {

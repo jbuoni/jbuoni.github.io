@@ -5,7 +5,7 @@ import {
     onGithubClick,
     onLinkedInClick,
     onStackOverflowClick
-} from '../utils/outsideSiteUtils';
+} from '../../utils/outsideSiteUtils';
 
 const Social = ({ displayText=true }) => {
     return (

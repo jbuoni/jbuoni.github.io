@@ -1,8 +1,8 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import '../../styles/about.less';
-import Social from '../Social';
-import Experience from '../Experience';
+import Social from './Social';
+import Experience from './Experience';
 import TopHeader from '../TopHeader';
 import { WhoAmI, Photo, Icon } from './aboutUtils';
 
