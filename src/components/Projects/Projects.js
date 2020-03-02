@@ -95,7 +95,7 @@ const Projects = () => {
                             </div>
                             <div className="project-information">
                                 <div className="project-description">
-                                    Side project of mine. I am in the progress of redoing my parents farm. It requires a backend and a UI which will allow for someone not techy to update it easily.
+                                    Side project of mine. I am in the progress of redoing my parents farm website. It requires a backend and a UI which will allow for someone not techy to update it easily.
                                 </div>
                                 <div className="project-image-container">
                                     <img src={lbf1} className="project-image-lbf" />
