@@ -7,6 +7,10 @@ import mosaic2 from '../../images/mosaic2.png';
 import list from '../../images/list.png';
 import exp1 from '../../images/exp1.png';
 import bbplot from '../../images/bbpplot.png';
+import angular1 from '../../images/angular1.png';
+import angular2 from '../../images/angular2.png';
+import lbf1 from '../../images/lbf1.png';
+import lbf2 from '../../images/lbf2.png';
 // Video
 import project3 from '../../images/project3.mp4';
 import TopHeader from '../TopHeader';
@@ -58,6 +62,48 @@ const Projects = () => {
             </div>
             <main className="container p3 ">
                 <div className="project-content">
+                <Fade left>
+                        <div className="col sm-col-7 angular col-border">
+                            <div className="project-title">
+                                <h2>Website in Angular</h2>
+                                <RepoLink link='https://github.com/jbuoni/website_angular' repoType='github'/>
+                                <div className="project-tool-container">
+                                <i class="fab fa-2x fa-angular"></i>
+                                </div>
+                            </div>
+                            <div className="project-information">
+                                <div className="project-description">
+                                    The website you are looking at right now, but using Typescript and Angular 8.
+                                </div>
+                                <div className="project-image-container">
+                                    <img src={angular1} className="project-image" />
+                                    <img src={angular2} className="project-image" />
+                                </div>
+                            </div>
+                        </div>
+                    </Fade>
+                    <Fade left>
+                        <div className="col sm-col-7 farm col-border">
+                            <div className="project-title">
+                                <h2>Lachenbock Farm</h2>
+                                <RepoLink link='https://bitbucket.org/JasonBuoni25/lachenbockfarm/src/master/' repoType='bitbucket'/>
+                                <div className="project-tool-container">
+                                    <i className="fab fa-react fa-2x"></i>
+                                    <i className="fab fa-js fa-2x js"></i>
+                                    <i className="fab fa-python fa-2x python"></i>
+                                </div>
+                            </div>
+                            <div className="project-information">
+                                <div className="project-description">
+                                    Side project of mine. I am in the progress of redoing my parents farm. It requires a backend and a UI which will allow for someone not techy to update it easily.
+                                </div>
+                                <div className="project-image-container">
+                                    <img src={lbf1} className="project-image-lbf" />
+                                    <img src={lbf2} className="project-image-lbf" />
+                                </div>
+                            </div>
+                        </div>
+                    </Fade>
                     <Fade left>
                         <div className="col sm-col-7 mosaic col-border">
                             <div className="project-title">
