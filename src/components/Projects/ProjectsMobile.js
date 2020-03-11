@@ -70,8 +70,8 @@ const ProjectsMobile = () => {
                                     The website you are looking at right now, but using Typescript and Angular 8.
                                 </div>
                                 <div className="project-image-container-mobile">
-                                    <img src={angular1} className="project-image" />
-                                    <img src={angular2} className="project-image" />
+                                    <img src={angular1} className="project-image-lbf" />
+                                    <img src={angular2} className="project-image-lbf image-height-mobile" />
                                 </div>
                             </div>
                         </div>
