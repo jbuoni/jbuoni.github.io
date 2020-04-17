@@ -4,10 +4,11 @@ import {
     onFacebookClick,
     onGithubClick,
     onLinkedInClick,
-    onStackOverflowClick
+    onStackOverflowClick,
+    onInstagramClick
 } from '../utils/outsideSiteUtils';
 
-export default class Footer extends Component {
+export default class Footer extends Component {x
     constructor(props) {
         super(props);
         this.onEmailButtonClick = this.onEmailButtonClick.bind(this);
@@ -29,6 +30,7 @@ export default class Footer extends Component {
                     <span onClick={onBitbucketClick}><i className="fab fa-bitbucket fa-2x icon" aria-hidden="true"></i></span>
                     <span onClick={onStackOverflowClick}><i className="fab fa-stack-overflow fa-2x icon"></i></span>
                     <span onClick={onFacebookClick}><i className="fab fa-facebook fa-2x icon"></i></span>
+                    <span onClick={onInstagramClick}><i className="fab fa-instagram fa-2x icon"></i></span>
                 </div>
             </>
         );

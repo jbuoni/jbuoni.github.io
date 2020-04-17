@@ -24,7 +24,7 @@ const AboutMobile = () => {
                         < Experience />
                     </Fade>
                     <Fade bottom>
-                        < Social displayText={false} />
+                        < Social mobile={true} />
                     </Fade>
                 </div>
             </div>

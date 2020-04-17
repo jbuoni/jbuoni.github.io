@@ -24,7 +24,12 @@ function onStackOverflowClick(e) {
     win.focus();
 }
 
+function onInstagramClick(e) {
+    const win = window.open('https://www.instagram.com/heysone__/', '_blank');
+    win.focus();
+}
 
 
-export { onBitbucketClick, onFacebookClick, onGithubClick, onLinkedInClick, onStackOverflowClick };
+
+export { onBitbucketClick, onFacebookClick, onGithubClick, onLinkedInClick, onStackOverflowClick, onInstagramClick };
 
