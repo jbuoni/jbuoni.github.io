@@ -28,9 +28,11 @@ const Social = ({ mobile=false }) => {
                 <div className="item-hover" onClick={onFacebookClick}>
                     <i className={`fab fa-facebook ${mobile && 'fa-2x' || 'fa-3x icon-about'} icon`} aria-hidden="true"></i>
                 </div>
-                <div className="item-hover" onClick={onInstagramClick}>
-                    <i className={`fab fa-instagram ${mobile && 'fa-2x' || 'fa-3x icon-about'} icon`} aria-hidden="true"></i>
-                </div>
+                { !mobile &&
+                    <div className="item-hover" onClick={onInstagramClick}>
+                        <i className={`fab fa-instagram ${mobile && 'fa-2x' || 'fa-3x icon-about'} icon`} aria-hidden="true"></i>
+                    </div>
+                }
             </div>
         </div>
     );
