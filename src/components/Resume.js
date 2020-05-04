@@ -87,12 +87,12 @@ const Resume = () => {
                         </div>
                         <div className="personal">
                             <h3 className="resume-header">Personal</h3>
-                            <div className="resume-content-item"><ContentWithFontAwesome faclassName="fas fa-laptop laptop" text="buoni.github.io"/></div>
-                            <div className="resume-content-item"><ContentWithFontAwesome faclassName="fas fa-mobile-alt phone" text="678-596-2815"/></div>
-                            <div className="resume-content-item"><ContentWithFontAwesome faclassName="fas fa-envelope-open-text" text="buoni.jason@gmail.com"/></div>
-                            <div className="resume-content-item"><ContentWithFontAwesome faclassName="fab fa-linkedin" text="linkedin.com/in/jason-buoni-33684451"/></div>
-                            <div className="resume-content-item"><ContentWithFontAwesome faclassName="fab fa-github-alt" text="https://github.com/jbuoni"/></div>
-                            <div className="resume-content-item"><ContentWithFontAwesome faclassName="fab fa-bitbucket" text="https://bitbucket.org/JasonBuoni25"/></div>
+                            <div className="resume-content-item"><ContentWithFontAwesome faClass="fas fa-laptop laptop" text="buoni.github.io"/></div>
+                            <div className="resume-content-item"><ContentWithFontAwesome faClass="fas fa-mobile-alt phone" text="678-596-2815"/></div>
+                            <div className="resume-content-item"><ContentWithFontAwesome faClass="fas fa-envelope-open-text" text="buoni.jason@gmail.com"/></div>
+                            <div className="resume-content-item"><ContentWithFontAwesome faClass="fab fa-linkedin" text="linkedin.com/in/jason-buoni-33684451"/></div>
+                            <div className="resume-content-item"><ContentWithFontAwesome faClass="fab fa-github-alt" text="https://github.com/jbuoni"/></div>
+                            <div className="resume-content-item"><ContentWithFontAwesome faClass="fab fa-bitbucket" text="https://bitbucket.org/JasonBuoni25"/></div>
                         </div>
                         <div className="skills">
                             <h3 className="resume-header">Languages and Tools</h3>
