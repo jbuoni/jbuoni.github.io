@@ -6,9 +6,6 @@ import houstons from '../images/houstons.jpeg';
 import pimpact from '../images/pimpact.png';
 import foundations from '../images/foundations.png';
 import wellspring from '../images/wellspring.png';
-// import bn from '../images/bn.png';
-// import mary from '../images/mary.png';
-// import callrail from '../images/callrail.png';
 // College Images
 import kennesaw from '../images/kennesaw.png';
 import georgiastate from '../images/georgiastate.png';
@@ -79,21 +76,19 @@ const CertificationsContainer = ({ certType, certDate, certFrom}) => {
 const Resume = () => {
     return (
         <>
-            {/* <div className="resume-overlay"></div> */}
             <div className="resume">
                 <div className="resume-top">
                     <div className="resume-top-left">
                         <div className="resume-name">Jennifer Corkle</div>
                         <div className="resume-title">Medical Case Manager</div>
                     </div>
-                    {/* <button className="resume-download-button" onClick={viewPdf}>View PDF</button> */}
                 </div>
                 <div className="resume-content">
                     <div className="resume-content-right">
                         <div className="about">
                             <h3 className="resume-header">Who am I?</h3>
                             <div className="about-text">
-                            I am a Medical Case Manager with a Masters in Social Work. I utilize Solution Focused Brief Therapy techniques.
+                            I am a Medical Case Manager with a Masters in Social Work who is license eligible. I utilize Solution Focused Brief Therapy techniques.
                             I also have working experience with addictions, and with minors. I would like to become a Licensed Clinical Social Worker.
                             </div>
                         </div>
