@@ -80,7 +80,7 @@ const Resume = () => {
                 <div className="resume-top">
                     <div className="resume-top-left">
                         <div className="resume-name">Jennifer Corkle</div>
-                        <div className="resume-title">Medical Case Manager</div>
+                        <div className="resume-title">Master of Social Work</div>
                     </div>
                 </div>
                 <div className="resume-content">
@@ -88,8 +88,8 @@ const Resume = () => {
                         <div className="about">
                             <h3 className="resume-header">Who am I?</h3>
                             <div className="about-text">
-                            I am a Medical Case Manager with a Masters in Social Work who is license eligible. I utilize Solution Focused Brief Therapy techniques.
-                            I also have working experience with addictions, and with minors. I would like to become a Licensed Clinical Social Worker.
+                            I am a clinical MSW who is license eligible. I have utilized SFBT and CBT techniques in my experience working with minors, the HIV population, and addictions.
+                            I would like to become a Licensed Clinical Social Worker.
                             </div>
                         </div>
                         <div className="personal">
@@ -127,12 +127,15 @@ const Resume = () => {
                             <ResumeRow 
                                 line1="Positive Impact Health Centers, Atlanta GA" line2="Medical Case Manager Intern" date="August 2019 - March 2020"
                                 info={`Provided comprehensive HIV care to patients who are uninsured.
+                                <b> Assessed and resolved patient’s barriers to care by providing education, resources, and referrals. 
+                                <b> Offered patients support of emotional services and resources.
+                                <b> Assessed the motivation of each patient upon entry to the clinic.
                                 <b> Completed biopsychosocial assessment with patients.
-                                <b> Assessed and resolved patients’ barriers to care by providing education, resources, and/or referrals.
                                 <b> Maintained caseload and was the point of contact for patients.
-                                <b> Created Individual Service Plans for caseload and coordinated services to meet goals.
-                                <b> Advocated for patients to help patients make the best health care decisions.
-                                <b> Participated in interdisciplinary meetings weekly to provide the best care for patients. 
+                                <b> Created Individualized Service Plan for caseload and followed up with each patient regarding goals and treatment adherence. 
+                                <b> Aided in crisis intervention for patients who were diagnosed with HIV within the first seventy-two hours of diagnosis.   
+                                <b> Provided treatment adherence counseling to ensure patients maintain a healthy lifestyle.
+                                <b> Collaborated with interdisciplinary team daily to advocate and provide the best care for patients.
                                 `}
                                 image={pimpact}
                             />
