@@ -80,7 +80,7 @@ const Resume = () => {
                         <div className="about">
                             <h3 className="resume-header">Who am I?</h3>
                             <div className="about-text">
-                                I am a polyglot developer with a Masters in Computer Science. 
+                                I am a polyglot developer with a Masters in Computer Science.
                                 I focus on full-stack development and enjoy learning about cyber security principles and machine learning.
                                 I also have experience with big data as well as DevOps.
                             </div>
@@ -99,22 +99,21 @@ const Resume = () => {
                             <SkillsContainer skill="JavaScript" stars={[1,2,3,4,5]}/>
                             <SkillsContainer skill="Python" stars={[1,2,3,4]}/>
                             <SkillsContainer skill="NodeJS" stars={[1,2,3,5]}/>
-                            <SkillsContainer skill="TypeScript" stars={[1,2,3,4]}/>
+                            <SkillsContainer skill="TypeScript" stars={[1,2,3,4,5]}/>
                             <SkillsContainer skill="Java" stars={[1,2,3]}/>
                             <SkillsContainer skill="C#" stars={[1,2,3]}/>
                             <SkillsContainer skill="Scala" stars={[1,2,3]}/>
                             <SkillsContainer skill="React" stars={[1,2,3,4]}/>
-                            <SkillsContainer skill="Angular" stars={[1,2]}/>
-                            <SkillsContainer skill="Ruby" stars={[1]}/>
-                            <SkillsContainer skill="Rails" stars={[1]}/>
+                            <SkillsContainer skill="Angular" stars={[1,2,3]}/>
+                            <SkillsContainer skill="Ruby" stars={[1,2,3]}/>
+                            <SkillsContainer skill="Rails" stars={[1,2]}/>
                             <SkillsContainer skill="SQL" stars={[1,2,3]}/>
                             <SkillsContainer skill="PostgreSQL" stars={[1,2,3]}/>
                             <SkillsContainer skill="MongoDB" stars={[1,2]}/>
                             <SkillsContainer skill="Docker" stars={[1,2]}/>
                             <SkillsContainer skill="Kubernetes" stars={[1,2]}/>
-                            <SkillsContainer skill="Ruby" stars={[1,2]}/>
                             <SkillsContainer skill="Elasticsearch" stars={[1,2]}/>
-                            <SkillsContainer skill="AWS" stars={[1]}/>
+                            <SkillsContainer skill="AWS" stars={[1,2]}/>
                             <SkillsContainer skill="Backbone" stars={[1]}/>
                             <SkillsContainer skill="C++" stars={[1]}/>
                             <SkillsContainer skill="jQuery" stars={[1,2,3,4]}/>
@@ -134,19 +133,19 @@ const Resume = () => {
                     <div className="resume-mid">
                         <div className="resume-section">
                             <ResumeHeader title="Experience" />
-                            <ResumeRow 
+                            <ResumeRow
                                 line1="CallRail, Atlanta GA" line2="Senior Software Engineer" date="March 2020 - Present"
                                 info={` Using TypeScript, Angular, Ruby, and Rails, developed and maintained CallRail web applications.`}
                                 image={callrail}
                             />
-                            <ResumeRow 
+                            <ResumeRow
                                 line1="Honeywell, Atlanta GA" line2="Senior Software Engineer" date="September 2019 - March 2020"
                                 info={` Using TypeScript, I develop and maintain Honeywell Forge Platform APIs and CLI tools used to produce IoT applications.
                                        <b> Assist in DevOps related tasks using Docker, Kubernetes, Openshift, as well as other deployment tools.
                                 `}
                                 image={honeywell}
                             />
-                            <ResumeRow 
+                            <ResumeRow
                                 line1="Turner Broadcasting Inc., Atlanta GA" line2="Senior Software Developer" date="May 2015 - September 2019"
                                 info={` Developed backend and frontend services used to transfer video files and metadata to CNN and Turner internal systems around the world.
                                     <b> Worked as a member of a scrum team for multiple high visibility projects including the Elections System and Content Supply Chain.
@@ -157,40 +156,40 @@ const Resume = () => {
                                 `}
                                 image={warnerresume}
                             />
-                            <ResumeRow 
-                                line1="Westat, Atlanta GA​" line2="Programmer Analyst" date="June 2013 - May 2015"       
+                            <ResumeRow
+                                line1="Westat, Atlanta GA​" line2="Programmer Analyst" date="June 2013 - May 2015"
                                 image={westat}
                             />
                             <br/>
-                            <ResumeRow 
-                                line1="Mary Cariola Children’s Center, Rochester New York" 
-                                line2="Website Developer" date="December 2012 – May 2013" 
+                            <ResumeRow
+                                line1="Mary Cariola Children’s Center, Rochester New York"
+                                line2="Website Developer" date="December 2012 – May 2013"
                                 image={mary}
                             />
                             <br/>
-                            <ResumeRow 
-                                line1="Verivo Software, Waltham Massachusetts" 
-                                line2="Product Manager" date="February 2011 – September 2011" 
+                            <ResumeRow
+                                line1="Verivo Software, Waltham Massachusetts"
+                                line2="Product Manager" date="February 2011 – September 2011"
                                 image={verivo}
                             />
                             <br/>
-                            <ResumeRow 
-                                line1="Brand Networks Inc., Rochester NY​" 
-                                line2="Software Developer" date="March 2012 – November 2012" 
+                            <ResumeRow
+                                line1="Brand Networks Inc., Rochester NY​"
+                                line2="Software Developer" date="March 2012 – November 2012"
                                 image={bn}
                             />
                         </div>
                         <div className="resume-section">
                             <ResumeHeader title="Education" />
-                            <ResumeRow 
-                                line1="Georgia Institute of Technology" 
-                                line2="Masters of Science, Computer Science, 3.8 GPA" 
-                                date="August 2018" 
+                            <ResumeRow
+                                line1="Georgia Institute of Technology"
+                                line2="Masters of Science, Computer Science, 3.8 GPA"
+                                date="August 2018"
                                 image={gtech}
                             />
-                            <ResumeRow 
-                                line1="Rochester Institute of Technology" 
-                                line2="Bachelors of Science, Software Engineering, Economics Minor" 
+                            <ResumeRow
+                                line1="Rochester Institute of Technology"
+                                line2="Bachelors of Science, Software Engineering, Economics Minor"
                                 date="May 2013"
                                 image={rit}
                             />
