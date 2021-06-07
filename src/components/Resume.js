@@ -1,18 +1,20 @@
-import React from 'react';
 import '../styles/resume.less';
-import resume from '../files/resume.pdf';
-// Company images
-import warnerresume from '../images/warnerresume.jpeg';
-import honeywell from '../images/honeywell.jpeg';
-import westat from '../images/westat.png';
-import verivo from '../images/verivo.jpeg';
-import bn from '../images/bn.png';
-import mary from '../images/mary.png';
-import callrail from '../images/callrail.png';
-// College Images
-import gtech from '../images/gtech.png';
-import rit from '../images/rit.png';
 
+import React from 'react';
+
+import resume from '../files/resume.pdf';
+import bn from '../images/bn.png';
+import callrail from '../images/callrail.png';
+import gtech from '../images/gtech.png';
+import honeywell from '../images/honeywell.jpeg';
+import mary from '../images/mary.png';
+import rit from '../images/rit.png';
+import verivo from '../images/verivo.jpeg';
+import warnerresume from '../images/warnerresume.jpeg';
+import westat from '../images/westat.png';
+
+// Company images
+// College Images
 const ContentWithFontAwesome = ({ text, faClass }) => {
     return (
       <>
@@ -87,7 +89,7 @@ const Resume = () => {
                         </div>
                         <div className="personal">
                             <h3 className="resume-header">Personal</h3>
-                            <div className="resume-content-item"><ContentWithFontAwesome faClass="fas fa-laptop laptop" text="buoni.github.io"/></div>
+                            <div className="resume-content-item"><ContentWithFontAwesome faClass="fas fa-laptop laptop" text="jbuoni.github.io"/></div>
                             <div className="resume-content-item"><ContentWithFontAwesome faClass="fas fa-mobile-alt phone" text="678-596-2815"/></div>
                             <div className="resume-content-item"><ContentWithFontAwesome faClass="fas fa-envelope-open-text" text="buoni.jason@gmail.com"/></div>
                             <div className="resume-content-item"><ContentWithFontAwesome faClass="fab fa-linkedin" text="linkedin.com/in/jason-buoni-33684451"/></div>
@@ -105,7 +107,7 @@ const Resume = () => {
                             <SkillsContainer skill="Scala" stars={[1,2,3]}/>
                             <SkillsContainer skill="React" stars={[1,2,3,4]}/>
                             <SkillsContainer skill="Angular" stars={[1,2,3]}/>
-                            <SkillsContainer skill="Ruby" stars={[1,2,3]}/>
+                            <SkillsContainer skill="Ruby" stars={[1,2,3,4]}/>
                             <SkillsContainer skill="Rails" stars={[1,2]}/>
                             <SkillsContainer skill="SQL" stars={[1,2,3]}/>
                             <SkillsContainer skill="PostgreSQL" stars={[1,2,3]}/>
@@ -114,6 +116,7 @@ const Resume = () => {
                             <SkillsContainer skill="Kubernetes" stars={[1,2]}/>
                             <SkillsContainer skill="Elasticsearch" stars={[1,2]}/>
                             <SkillsContainer skill="AWS" stars={[1,2]}/>
+                            <SkillsContainer skill="Amazon EKS" stars={[1,2]}/>
                             <SkillsContainer skill="Backbone" stars={[1]}/>
                             <SkillsContainer skill="C++" stars={[1]}/>
                             <SkillsContainer skill="jQuery" stars={[1,2,3,4]}/>
@@ -135,23 +138,27 @@ const Resume = () => {
                             <ResumeHeader title="Experience" />
                             <ResumeRow
                                 line1="CallRail, Atlanta GA" line2="Senior Software Engineer" date="March 2020 - Present"
-                                info={` Using TypeScript, Angular, Ruby, and Rails, developed and maintained CallRail web applications.`}
+                                info={` Working as a member of a scrum team to maintain CallRail related billing code in Ruby, Rails, and Angular.
+                                <b> Participate in the mentorship program by helping mentor coworkers in Kubernetes, Angular, and SQL.
+                                <b> Presented on XXS and IDOR attacks and prevention during CallRail security tech talks.
+                                <b> Developed Typescript TypeORM prototype to help developers deploy and manage local Amazon EKS services.
+                                <b> Migrated rake tasks to cron jobs to help with company shift to Amazon EKS.
+                                `}
                                 image={callrail}
                             />
                             <ResumeRow
-                                line1="Honeywell, Atlanta GA" line2="Senior Software Engineer" date="September 2019 - March 2020"
-                                info={` Using TypeScript, I develop and maintain Honeywell Forge Platform APIs and CLI tools used to produce IoT applications.
-                                       <b> Assist in DevOps related tasks using Docker, Kubernetes, Openshift, as well as other deployment tools.
+                                line1="Honeywell, Atlanta GA" line2="Senior Cloud Developer" date="September 2019 - March 2020"
+                                info={` Using TypeScript, developed and maintained Honeywell Forge Platform APIs and CLI tools used to produce IoT applications.
+                                       <b> Use Openshift, Rancher, and Octapus Deploy to release development code into production.
+                                       <b> Using Docker and Kubernetes, updated Forge Platform to deploy using Honeywell's pipeline instead of through GitHub.
                                 `}
                                 image={honeywell}
                             />
                             <ResumeRow
                                 line1="Turner Broadcasting Inc., Atlanta GA" line2="Senior Software Developer" date="May 2015 - September 2019"
-                                info={` Developed backend and frontend services used to transfer video files and metadata to CNN and Turner internal systems around the world.
-                                    <b> Worked as a member of a scrum team for multiple high visibility projects including the Elections System and Content Supply Chain.
+                                info={` Worked as a member of a scrum team for multiple high visibility projects including the Elections System and Content Supply Chain.
                                     <b> Worked with mulitple languages and frameworks throughout the day such as NodeJS, React, Scala, Java, Python, and MongoDB.
-                                    <b> Assisted in DevOps related tasks using Chef, AWS, and Jenkins.
-                                    <b> Created a new tracking system as a side project using Scala and Akka. Project was deployed internally and replaced multiple legacy systems.
+                                    <b> Created a new tracking system as a side project using Scala and Akka to replaced multiple legacy systems.
                                     <b> Spearheaded mentorship program for my department, which was incorporated to all intern positions for the GTO Tech Intern program.
                                 `}
                                 image={warnerresume}

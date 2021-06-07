@@ -19,18 +19,18 @@ export default function Experience() {
                 <CustomBar language={'Python'} years={70}/>
                 <CustomBar language={'NodeJS'} years={70}/>
                 <CustomBar language={'TypeScript'} years={70}/>
-                <CustomBar language={'React'} years={40}/>
-                <CustomBar language={'Angular'} years={20}/>
+                <CustomBar language={'React'} years={50}/>
+                <CustomBar language={'Angular'} years={50}/>
                 <CustomBar language={'C#'} years={40}/>
                 <CustomBar language={'Scala'} years={50}/>
                 <CustomBar language={'Mongo'} years={40}/>
                 <CustomBar language={'Docker'} years={20}/>
-                <CustomBar language={'SQL'} years={50}/>
+                <CustomBar language={'SQL'} years={60}/>
                 <CustomBar language={'Postgres'} years={30}/>
-                <CustomBar language={'JQuery'} years={70}/>
                 <CustomBar language={'CSS'} years={40}/>
-                <CustomBar language={'Ruby'} years={20}/>
-                <CustomBar language={'Kubernetes'} years={10}/>
+                <CustomBar language={'Ruby'} years={50}/>
+                <CustomBar language={'Kubernetes'} years={20}/>
+                <CustomBar language={'JQuery'} years={70}/>
             </div>
         </div>
     )
