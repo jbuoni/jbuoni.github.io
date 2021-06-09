@@ -149,7 +149,7 @@ const Resume = () => {
                             <ResumeRow
                                 line1="Honeywell, Atlanta GA" line2="Senior Cloud Developer" date="September 2019 - March 2020"
                                 info={` Using TypeScript, developed and maintained Honeywell Forge Platform APIs and CLI tools used to produce IoT applications.
-                                       <b> Use Openshift, Rancher, and Octapus Deploy to release development code into production.
+                                       <b> Use Openshift, Rancher, and Octopus Deploy to release development code into production.
                                        <b> Using Docker and Kubernetes, updated Forge Platform to deploy using Honeywell's pipeline instead of through GitHub.
                                 `}
                                 image={honeywell}
