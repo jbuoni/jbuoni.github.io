@@ -122,11 +122,20 @@ const Resume = () => {
                             <SkillsContainer skill="jQuery" stars={[1,2,3,4]}/>
                         </div>
                         <div className="skills">
+                            <h3 className="resume-header">Concepts</h3>
+                            <SkillsContainer skill="Front-end" stars={[1,2,3,4]}/>
+                            <SkillsContainer skill="Back-end" stars={[1,2,3,4,5]}/>
+                            <SkillsContainer skill="Databases" stars={[1,2,3,4]}/>
+                            <SkillsContainer skill="DevOps" stars={[1,2,3]}/>
+                            <SkillsContainer skill="Security" stars={[1,2]}/>
+                            <SkillsContainer skill="UI/UX" stars={[1]}/>
+                        </div>
+                        <div className="skills">
                             <h3 className="resume-header">Soft Skills</h3>
                             <SkillsContainer skill="Mentorship" stars={[1,2,3,4,5]}/>
                             <SkillsContainer skill="Leadership" stars={[1,2,3]}/>
                             <SkillsContainer skill="Collaboration" stars={[1,2,3,4]}/>
-                            <SkillsContainer skill="Communication" stars={[1,2,3]}/>
+                            <SkillsContainer skill="Communication" stars={[1,2,3,4]}/>
                         </div>
                         <div className="certifications" >
                             <h3 className="resume-header">Certifications</h3>
@@ -141,16 +150,17 @@ const Resume = () => {
                                 info={` Working as a member of a scrum team to maintain CallRail related billing code in Ruby, Rails, and Angular.
                                 <b> Participate in the mentorship program by helping mentor coworkers in Kubernetes, Angular, and SQL.
                                 <b> Presented on XXS and IDOR attacks and prevention during CallRail security tech talks.
-                                <b> Developed Typescript TypeORM prototype to help developers deploy and manage local Amazon EKS services.
-                                <b> Migrated rake tasks to cron jobs to help with company shift to Amazon EKS.
+                                <b> Developed Typescript TypeORM prototype to help developers deploy and manage local Amazon EKS services and configurations.
+                                <b> Migrated rake tasks to Kubernetes k8 cron jobs to help with company shift to Amazon EKS.
                                 `}
                                 image={callrail}
                             />
                             <ResumeRow
                                 line1="Honeywell, Atlanta GA" line2="Senior Cloud Developer" date="September 2019 - March 2020"
-                                info={` Using TypeScript, developed and maintained Honeywell Forge Platform APIs and CLI tools used to produce IoT applications.
-                                       <b> Use Openshift, Rancher, and Octopus Deploy to release development code into production.
-                                       <b> Using Docker and Kubernetes, updated Forge Platform to deploy using Honeywell's pipeline instead of through GitHub.
+                                info={` Used TypeScript to develop and maintain Honeywell Forge Platform APIs and CLI tools used to produce IoT applications.
+                                       <b> Used Typescript, TypeORM to create a command-line tool to allow front-end developers to create, publish, and update NPM packages.
+                                       <b> Used Openshift, Rancher, and Octopus Deploy to release development code into production.
+                                       <b> Used Docker and Kubernetes to update Forge Platform to deploy using Honeywell's pipeline instead of through GitHub.
                                 `}
                                 image={honeywell}
                             />
