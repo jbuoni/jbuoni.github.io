@@ -168,7 +168,7 @@ const Resume = () => {
                                 line1="Turner Broadcasting Inc., Atlanta GA" line2="Senior Software Developer" date="May 2015 - September 2019"
                                 info={` Worked as a member of a scrum team for multiple high visibility projects including the Elections System and Content Supply Chain.
                                     <b> Worked with mulitple languages and frameworks throughout the day such as NodeJS, React, Scala, Java, Python, and MongoDB.
-                                    <b> Created a new tracking system as a side project using Scala and Akka to replaced multiple legacy systems.
+                                    <b> Created a new tracking system as a side project using Scala and Akka which replaced multiple legacy systems.
                                     <b> Spearheaded mentorship program for my department, which was incorporated to all intern positions for the GTO Tech Intern program.
                                 `}
                                 image={warnerresume}
