@@ -1,15 +1,17 @@
-import React from 'react';
 import '../styles/resume.less';
-import resume from '../files/resume.pdf';
-// Company images
-import houstons from '../images/houstons.jpeg';
-import pimpact from '../images/pimpact.png';
-import foundations from '../images/foundations.png';
-import wellspring from '../images/wellspring.png';
-// College Images
-import kennesaw from '../images/kennesaw.png';
-import georgiastate from '../images/georgiastate.png';
 
+import React from 'react';
+
+import resume from '../files/resume.pdf';
+import foundations from '../images/foundations.png';
+import georgiastate from '../images/georgiastate.png';
+import houstons from '../images/houstons.jpeg';
+import kennesaw from '../images/kennesaw.png';
+import pimpact from '../images/pimpact.png';
+import wellspring from '../images/wellspring.png';
+
+// Company images
+// College Images
 
 const ContentWithFontAwesome = ({ text, faClass }) => {
     return (
@@ -88,7 +90,7 @@ const Resume = () => {
                         <div className="about">
                             <h3 className="resume-header">Who am I?</h3>
                             <div className="about-text">
-                            I am a clinical MSW who is license eligible. I have utilized SFBT and CBT techniques in my experience working with minors, the HIV population, and addictions.
+                            I am a clinical LMSW. I have utilized SFBT and CBT techniques in my experience working with minors, the HIV population, and addictions.
                             I would like to become a Licensed Clinical Social Worker.
                             </div>
                         </div>
@@ -101,61 +103,81 @@ const Resume = () => {
                         <div className="skills">
                             <h3 className="resume-header">Skills</h3>
                             <SkillsContainer skill="Empathy" stars={[1,2,3,4]}/>
-                            <SkillsContainer skill="Teamwork" stars={[1,2,3,4]}/>                            
+                            <SkillsContainer skill="Teamwork" stars={[1,2,3,4]}/>
                             <SkillsContainer skill="Communication" stars={[1,2,3,4]}/>
                             <SkillsContainer skill="Critical Thinking" stars={[1,2,3]}/>
                             <SkillsContainer skill="Active Listening" stars={[1,2,3]}/>
                             <SkillsContainer skill="Crisis Intervention" stars={[1,2,3]}/>
                             <SkillsContainer skill="Organization" stars={[1,2,3]}/>
                             <SkillsContainer skill="Active Learning" stars={[1,2,3,4]}/>
-                            
                             <SkillsContainer skill="Problem Solving" stars={[1,2,3]}/>
                             <SkillsContainer skill="Service Orientation" stars={[1,2,3]}/>
                         </div>
+                        <div className="skills">
+                            <h3 className="resume-header">Technical Proficiency</h3>
+                            <SkillsContainer skill="Microsoft Word" stars={[1,2,3,4]}/>
+                            <SkillsContainer skill="Microsoft Excel" stars={[1,2,3,4]}/>
+                            <SkillsContainer skill="Adobe" stars={[1,2,3,4]}/>
+                            <SkillsContainer skill="Cerner" stars={[1,2,3]}/>
+                            <SkillsContainer skill="Client Track" stars={[1,2,3]}/>
+                        </div>
                         <div className="certifications" >
                             <h3 className="resume-header">Certifications</h3>
+                            <CertificationsContainer certType="Social Work & HIV/AIDS Conference" certDate="August 2021"/>
                             <CertificationsContainer certType="C-SBIRT" certDate="August 2020" certFrom="Caron Treatment Centers" />
                             <CertificationsContainer certType="PREP" certDate="April 2020" certFrom="Caron Treatment Centers" />
                             <CertificationsContainer certType="Vaping and Marijuana Trends Among Youth" certDate="April 2020" certFrom="Caron Treatment Centers" />
                             <CertificationsContainer certType="Impact of Substance Use Disorders on the Family" certDate="April 2020" certFrom="Caron Treatment Centers" />
-                            <CertificationsContainer certType="CPR" certDate="August 2019" certFrom="Positive Impact Health Centers" />
                         </div>
                     </div>
                     <div className="resume-mid">
                         <div className="resume-section">
                             <ResumeHeader title="Experience" />
-                            <ResumeRow 
+                            <ResumeRow
+                                line1="Positive Impact Health Centers, Atlanta GA" line2="Housing Case Manager" date="August 2020 - Present"
+                                info={` Provide clinical support by using evidence based practice, included to, but not limited to: person-centered perspectives, using a strengths-based approach, crisis interventions, harm reduction strategies, and motivational interviewing.
+                                <b> Assess client’s individual needs and barriers to care, then create and execute treatment goals.
+                                <b> Maintained meaningful contact with clients to monitor goals and resolve barriers to care.
+                                <b> Document all client encounters appropriately and in a timely manner in electronic medical record systems.
+                                <b> Communicate effectively with clients, coworkers, supervisors, stakeholders, community partners, and advocates.
+                                <b> Collaborate with the multidisciplinary team regularly and attend meetings and trainings to enhance service delivery.
+                                <b> Make referrals to supportive services in the community.
+                                <b> Participate in creating and maintaining workplace that values diversity and increases collaborative teamwork, and is free of discrimination practices to best achieve agency’s mission..
+                                `}
+                                image={pimpact}
+                            />
+                            <ResumeRow
                                 line1="Positive Impact Health Centers, Atlanta GA" line2="Medical Case Manager Intern" date="August 2019 - March 2020"
                                 info={`Provided comprehensive HIV care to patients who are uninsured.
-                                <b> Assessed and resolved patient’s barriers to care by providing education, resources, and referrals. 
+                                <b> Assessed and resolved patient’s barriers to care by providing education, resources, and referrals.
                                 <b> Offered patients support of emotional services and resources.
                                 <b> Assessed the motivation of each patient upon entry to the clinic.
                                 <b> Completed biopsychosocial assessment with patients.
                                 <b> Maintained caseload and was the point of contact for patients.
-                                <b> Created Individualized Service Plan for caseload and followed up with each patient regarding goals and treatment adherence. 
-                                <b> Aided in crisis intervention for patients who were diagnosed with HIV within the first seventy-two hours of diagnosis.   
+                                <b> Created Individualized Service Plan for caseload and followed up with each patient regarding goals and treatment adherence.
+                                <b> Aided in crisis intervention for patients who were diagnosed with HIV within the first seventy-two hours of diagnosis.
                                 <b> Provided treatment adherence counseling to ensure patients maintain a healthy lifestyle.
                                 <b> Collaborated with interdisciplinary team daily to advocate and provide the best care for patients.
                                 `}
                                 image={pimpact}
                             />
-                            <ResumeRow 
+                            <ResumeRow
                                 line1="Wellspring Living, Atlanta GA" line2="Case Management Intern" date="August 2018 - May 2019"
                                 info={` Attended group therapy sessions.
                                 <b> Completed assessments with participants.
                                 <b> Attended cultural competency training.
                                 <b> Participated in weekly clinical team review meetings.
-                                <b> Managed and streamlined PSSF Grant. 
+                                <b> Managed and streamlined PSSF Grant.
                                 <b> Scheduled psychological and medical appointments for participants and maintained electronic medical records.
                                 `}
                                 image={wellspring}
                             />
-                            <ResumeRow 
+                            <ResumeRow
                                 line1="Talbott Recovery Center, Atlanta GA" line2="Resident Assistant" date="July 2017 – December 2017"
                                 info={` Supervised a maximum of fourteen patients at one time.
                                 <b> Helped patients integrate everyday life activities into their schedule.
                                 <b> Managed financial aspect of all patient activities.
-                                <b> Administered medication to patients. 
+                                <b> Administered medication to patients.
                                 <b> Provided direction and encouragement for patients.
                                 <b> Overnight supervisor which included checking on patients hourly to ensure safety of patients.
                                 <b> Provided detailed reports of activities and mental and emotional status of patients to managers and coworkers.
@@ -163,7 +185,7 @@ const Resume = () => {
                                 `}
                                 image={foundations}
                             />
-                            <ResumeRow 
+                            <ResumeRow
                                 line1="Houston’s Restaurant, Hillstone Restaurant Group, Atlanta GA" line2="Server" date="June 2011 – October 2019"
                                 info={``}
                                 image={houstons}
@@ -171,15 +193,15 @@ const Resume = () => {
                         </div>
                         <div className="resume-section">
                             <ResumeHeader title="Education" />
-                            <ResumeRow 
-                                line1="Kennesaw State University" 
-                                line2="Master of Social Work, 3.85 GPA" 
-                                date="August 2018" 
+                            <ResumeRow
+                                line1="Kennesaw State University"
+                                line2="Master of Social Work, 3.85 GPA"
+                                date="August 2018"
                                 image={kennesaw}
                             />
-                            <ResumeRow 
-                                line1="Georgia State University" 
-                                line2="Bachelor of Science, Psychology, 3.16 GPA" 
+                            <ResumeRow
+                                line1="Georgia State University"
+                                line2="Bachelor of Science, Psychology, 3.16 GPA"
                                 date="May 2013"
                                 image={georgiastate}
                             />
