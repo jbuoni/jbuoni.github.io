@@ -111,7 +111,7 @@ const Resume = () => {
                             <SkillsContainer skill="Organization" stars={[1,2,3]}/>
                             <SkillsContainer skill="Active Learning" stars={[1,2,3,4]}/>
                             <SkillsContainer skill="Problem Solving" stars={[1,2,3]}/>
-                            <SkillsContainer skill="Service Orientation" stars={[1,2,3]}/>
+                            <SkillsContainer skill="Service Orientation" stars={[1,2,3,4]}/>
                         </div>
                         <div className="skills">
                             <h3 className="resume-header">Technical Proficiency</h3>
@@ -139,7 +139,6 @@ const Resume = () => {
                                 <b> Assess client’s individual needs and barriers to care, then create and execute treatment goals.
                                 <b> Maintained meaningful contact with clients to monitor goals and resolve barriers to care.
                                 <b> Document all client encounters appropriately and in a timely manner in electronic medical record systems.
-                                <b> Communicate effectively with clients, coworkers, supervisors, stakeholders, community partners, and advocates.
                                 <b> Collaborate with the multidisciplinary team regularly and attend meetings and trainings to enhance service delivery.
                                 <b> Make referrals to supportive services in the community.
                                 <b> Participate in creating and maintaining workplace that values diversity and increases collaborative teamwork, and is free of discrimination practices to best achieve agency’s mission..
@@ -151,9 +150,7 @@ const Resume = () => {
                                 info={`Provided comprehensive HIV care to patients who are uninsured.
                                 <b> Assessed and resolved patient’s barriers to care by providing education, resources, and referrals.
                                 <b> Offered patients support of emotional services and resources.
-                                <b> Assessed the motivation of each patient upon entry to the clinic.
                                 <b> Completed biopsychosocial assessment with patients.
-                                <b> Maintained caseload and was the point of contact for patients.
                                 <b> Created Individualized Service Plan for caseload and followed up with each patient regarding goals and treatment adherence.
                                 <b> Aided in crisis intervention for patients who were diagnosed with HIV within the first seventy-two hours of diagnosis.
                                 <b> Provided treatment adherence counseling to ensure patients maintain a healthy lifestyle.
@@ -181,7 +178,6 @@ const Resume = () => {
                                 <b> Provided direction and encouragement for patients.
                                 <b> Overnight supervisor which included checking on patients hourly to ensure safety of patients.
                                 <b> Provided detailed reports of activities and mental and emotional status of patients to managers and coworkers.
-                                <b> Attended further education seminars on dealing with addiction and the patient’s behaviors.
                                 `}
                                 image={foundations}
                             />
