@@ -81,7 +81,7 @@ const Resume = () => {
             <div className="resume">
                 <div className="resume-top">
                     <div className="resume-top-left">
-                        <div className="resume-name">Jennifer Corkle</div>
+                        <div className="resume-name">Jennifer Wellborn</div>
                         <div className="resume-title">Master of Social Work</div>
                     </div>
                 </div>
@@ -100,6 +100,23 @@ const Resume = () => {
                             <div className="resume-content-item"><ContentWithFontAwesome faClass="fas fa-envelope-open-text" text="jennifer.corkle@gmail.com"/></div>
                             <div className="resume-content-item"><ContentWithFontAwesome faClass="fab fa-linkedin" text="linkedin.com/in/jennifer-corkle-3b77951a8"/></div>
                         </div>
+
+                        <div>
+                            <ResumeHeader title="Education" />
+                            <ResumeRow
+                                line1="Kennesaw State University"
+                                line2="Master of Social Work, 3.85 GPA"
+                                date="August 2018"
+                                image={kennesaw}
+                            />
+                            <ResumeRow
+                                line1="Georgia State University"
+                                line2="Bachelor of Science, Psychology"
+                                date="May 2013"
+                                image={georgiastate}
+                            />
+                        </div>
+
                         <div className="skills">
                             <h3 className="resume-header">Skills</h3>
                             <SkillsContainer skill="Empathy" stars={[1,2,3,4]}/>
@@ -185,21 +202,6 @@ const Resume = () => {
                                 line1="Houston’s Restaurant, Hillstone Restaurant Group, Atlanta GA" line2="Server" date="June 2011 – October 2019"
                                 info={``}
                                 image={houstons}
-                            />
-                        </div>
-                        <div className="resume-section">
-                            <ResumeHeader title="Education" />
-                            <ResumeRow
-                                line1="Kennesaw State University"
-                                line2="Master of Social Work, 3.85 GPA"
-                                date="August 2018"
-                                image={kennesaw}
-                            />
-                            <ResumeRow
-                                line1="Georgia State University"
-                                line2="Bachelor of Science, Psychology, 3.16 GPA"
-                                date="May 2013"
-                                image={georgiastate}
                             />
                         </div>
                     </div>
