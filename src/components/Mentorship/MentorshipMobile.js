@@ -1,32 +1,35 @@
-import React from 'react';
-import { Philosophy, navigateToSite } from './mentorshipUtils';
-import TopHeader from '../TopHeader';
-import Fade from 'react-reveal/Fade';
 import '../../styles/mentorship.less';
-// Peeps
+
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+
+import amazon from '../../images/amazon.png';
+import apple from '../../images/apple.png';
 import bo from '../../images/bo.jpeg';
+import carnegie from '../../images/carnegie.png';
 import laura from '../../images/laura.jpeg';
-import vinny from '../../images/vinny.jpeg';
+import mastercard from '../../images/mastercard.png';
+import parkmobile from '../../images/parkmobile.png';
+import paul from '../../images/paul.jpeg';
 import sandman from '../../images/sandman.jpeg';
 import soha from '../../images/soha.jpeg';
-import paul from '../../images/paul.jpeg';
-// Companies
-import mastercard from '../../images/mastercard.png';
-import amazon from '../../images/amazon.png';
-import warnermedia from '../../images/warnermedia.jpeg';
-import slack from '../../images/slack.png';
-import parkmobile from '../../images/parkmobile.png';
-// Schools
-import tech from '../../images/tech.png';
 import state from '../../images/state.png';
+import tech from '../../images/tech.png';
 import uga from '../../images/uga.png';
+import vinny from '../../images/vinny.jpeg';
+import warnermedia from '../../images/warnermedia.jpeg';
+import TopHeader from '../TopHeader';
+import { navigateToSite, Philosophy } from './mentorshipUtils';
 
+// Peeps
+// Companies
+// Schools
 const Profile = (props) => {
-    const { 
+    const {
         name,
         title,
-        pic, 
-        companyPic, 
+        pic,
+        companyPic,
         website,
         schoolPic,
         companyWebsite,
@@ -41,7 +44,7 @@ const Profile = (props) => {
             <div className="profile-content">
                 <div className="overview">
                     <div className="info">
-                        <h4>{name} &nbsp; 
+                        <h4>{name} &nbsp;
                             <i className={`${fontAwesomeClass} hover`} onClick={() => navigateToSite(website)} ></i>
                         </h4>
                         <div className="title"><h5><i>{title}</i></h5></div>
@@ -70,71 +73,72 @@ const MentorshipMobile = () => {
                         <Philosophy isDesktop={false} />
                     </Fade>
                     <Fade bottom>
-                        <Profile 
+                        <Profile
                             name="Sanford Leach"
-                            pic={sandman} 
+                            pic={sandman}
                             title="Systems/Software Developer"
-                            website={'https://www.linkedin.com/in/sanford-leach/'} 
+                            website={'https://sanfordleach.com/'}
+                            isWebsite={true}
                             company="Warner Media"
-                            companyPic={warnermedia} 
+                            companyPic={warnermedia}
                             companyWebsite="https://www.warnermediagroup.com/"
                             school="University of Georgia"
                             schoolPic={uga}
                         />
-                        <Profile 
+                        <Profile
                             name="Soha Jiwani"
-                            pic={soha} 
+                            pic={soha}
                             title="Software Developer"
-                            website={'https://www.linkedin.com/in/soha-jiwani/'} 
-                            company="Slack"
-                            companyPic={slack} 
-                            companyWebsite="https://slack.com/"
-                            school="Georgia Institute of Technology"
-                            schoolPic={tech}
+                            website={'https://www.linkedin.com/in/soha-jiwani/'}
+                            company="Apple"
+                            companyPic={apple}
+                            companyWebsite="https://www.apple.com/"
+                            school="Carnegie Mellon University"
+                            schoolPic={carnegie}
                         />
-                        <Profile 
+                        <Profile
                             name="Vinny Kapil"
-                            pic={vinny} 
+                            pic={vinny}
                             title="Systems/Software Developer"
-                            website={'https://vinnykapil.github.io'} 
+                            website={'https://vinnykapil.github.io'}
                             company="Warner Media"
                             isWebsite={true}
-                            companyPic={warnermedia} 
+                            companyPic={warnermedia}
                             companyWebsite="https://www.warnermediagroup.com/"
                             school="Georgia Institute of Technology"
                             schoolPic={tech}
                         />
-                        <Profile 
+                        <Profile
                             name="Bojun Yang"
-                            pic={bo} 
+                            pic={bo}
                             title="Software Engineer"
-                            website={'https://www.linkedin.com/in/bojun-yang-a181a5129/'} 
+                            website={'https://www.linkedin.com/in/bojun-yang-a181a5129/'}
                             company="Amazon"
-                            companyPic={amazon} 
+                            companyPic={amazon}
                             companyWebsite="https://www.amazon.com/"
                             school="Georgia Institute of Technology"
                             schoolPic={tech}
                         />
-                        <Profile 
+                        <Profile
                             name="Paul Dorsch"
-                            pic={paul} 
+                            pic={paul}
                             title="Software Developer"
                             isWebsite={true}
-                            website={'https://pauldorsch.com/'} 
+                            website={'https://pauldorsch.com/'}
                             company="Mastercard"
-                            companyPic={mastercard} 
+                            companyPic={mastercard}
                             companyWebsite="https://www.mastercard.us/en-us.html"
                             school="Georgia Institute of Technology"
                             schoolPic={tech}
                         />
-                        <Profile 
+                        <Profile
                             name="Laura Roesler"
-                            pic={laura} 
+                            pic={laura}
                             title="Software Engineer"
                             isWebsite={true}
-                            website={'https://lroseler.github.io/'} 
+                            website={'https://lroseler.github.io/'}
                             company="Park Mobile"
-                            companyPic={parkmobile} 
+                            companyPic={parkmobile}
                             companyWebsite="https://parkmobile.io/"
                             school="Georgia State University"
                             schoolPic={state}

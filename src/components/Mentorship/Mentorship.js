@@ -4,13 +4,14 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 
 import amazon from '../../images/amazon.png';
+import apple from '../../images/apple.png';
 import bo from '../../images/bo.jpeg';
+import carnegie from '../../images/carnegie.png';
 import laura from '../../images/laura.jpeg';
 import mastercard from '../../images/mastercard.png';
 import parkmobile from '../../images/parkmobile.png';
 import paul from '../../images/paul.jpeg';
 import sandman from '../../images/sandman.jpeg';
-import slack from '../../images/slack.png';
 import soha from '../../images/soha.jpeg';
 import state from '../../images/state.png';
 import tech from '../../images/tech.png';
@@ -75,7 +76,8 @@ const Mentees = () => {
                                 name="Sanford Leach"
                                 pic={sandman}
                                 title="Senior Software Developer"
-                                website={'https://www.linkedin.com/in/sanford-leach/'}
+                                website={'https://sanfordleach.com/'}
+                                isWebsite={true}
                                 company="Warner Media"
                                 companyPic={warnermedia}
                                 companyWebsite="https://www.warnermediagroup.com/"
@@ -87,11 +89,11 @@ const Mentees = () => {
                                 pic={soha}
                                 title="Software Developer"
                                 website={'https://www.linkedin.com/in/soha-jiwani/'}
-                                company="Slack"
-                                companyPic={slack}
-                                companyWebsite="https://slack.com/"
-                                school="Georgia Institute of Technology"
-                                schoolPic={tech}
+                                company="Apple"
+                                companyPic={apple}
+                                companyWebsite="https://www.apple.com/"
+                                school="Carnegie Mellon University"
+                                schoolPic={carnegie}
                             />
                         </div>
                         <div className="mentee-container">
