@@ -138,14 +138,6 @@ const Resume = () => {
                             <SkillsContainer skill="Cerner" stars={[1,2,3]}/>
                             <SkillsContainer skill="Client Track" stars={[1,2,3]}/>
                         </div>
-                        <div className="certifications" >
-                            <h3 className="resume-header">Certifications</h3>
-                            <CertificationsContainer certType="Social Work & HIV/AIDS Conference" certDate="August 2021"/>
-                            <CertificationsContainer certType="C-SBIRT" certDate="August 2020" certFrom="Caron Treatment Centers" />
-                            <CertificationsContainer certType="PREP" certDate="April 2020" certFrom="Caron Treatment Centers" />
-                            <CertificationsContainer certType="Vaping and Marijuana Trends Among Youth" certDate="April 2020" certFrom="Caron Treatment Centers" />
-                            <CertificationsContainer certType="Impact of Substance Use Disorders on the Family" certDate="April 2020" certFrom="Caron Treatment Centers" />
-                        </div>
                     </div>
                     <div className="resume-mid">
                         <div className="resume-section">
