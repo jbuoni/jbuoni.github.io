@@ -143,7 +143,20 @@ const Resume = () => {
                         <div className="resume-section">
                             <ResumeHeader title="Experience" />
                             <ResumeRow
-                                line1="Positive Impact Health Centers, Atlanta GA" line2="Housing Case Manager" date="August 2020 - Present"
+                                line1="Positive Impact Health Centers, Atlanta GA" line2="Medical Case Manager" date="August 2021 - Present"
+                                info={`Provided comprehensive HIV care to patients who are uninsured.
+                                <b> Assessed and resolved patient’s barriers to care by providing education, resources, and referrals.
+                                <b> Offered patients support of emotional services and resources.
+                                <b> Completed biopsychosocial assessment with patients.
+                                <b> Created Individualized Service Plan for caseload and followed up with each patient regarding goals and treatment adherence.
+                                <b> Aided in crisis intervention for patients who were diagnosed with HIV within the first seventy-two hours of diagnosis.
+                                <b> Provided treatment adherence counseling to ensure patients maintain a healthy lifestyle.
+                                <b> Collaborated with interdisciplinary team daily to advocate and provide the best care for patients.
+                                `}
+                                image={pimpact}
+                            />
+                            <ResumeRow
+                                line1="Positive Impact Health Centers, Atlanta GA" line2="Housing Case Manager" date="August 2020 - August 2021"
                                 info={` Provide clinical support by using evidence based practice, included to, but not limited to: person-centered perspectives, using a strengths-based approach, crisis interventions, harm reduction strategies, and motivational interviewing.
                                 <b> Assess client’s individual needs and barriers to care, then create and execute treatment goals.
                                 <b> Maintained meaningful contact with clients to monitor goals and resolve barriers to care.
@@ -186,7 +199,6 @@ const Resume = () => {
                                 <b> Administered medication to patients.
                                 <b> Provided direction and encouragement for patients.
                                 <b> Overnight supervisor which included checking on patients hourly to ensure safety of patients.
-                                <b> Provided detailed reports of activities and mental and emotional status of patients to managers and coworkers.
                                 `}
                                 image={foundations}
                             />
