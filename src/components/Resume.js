@@ -12,6 +12,7 @@ import rit from '../images/rit.png';
 import verivo from '../images/verivo.jpeg';
 import warnerresume from '../images/warnerresume.jpeg';
 import westat from '../images/westat.png';
+import veda from '../images/veda.jpeg';
 
 // Company images
 // College Images
@@ -115,8 +116,9 @@ const Resume = () => {
                             <SkillsContainer skill="Docker" stars={[1,2]}/>
                             <SkillsContainer skill="Kubernetes" stars={[1,2]}/>
                             <SkillsContainer skill="Elasticsearch" stars={[1,2]}/>
-                            <SkillsContainer skill="AWS" stars={[1,2]}/>
-                            <SkillsContainer skill="Amazon EKS" stars={[1,2]}/>
+                            <SkillsContainer skill="AWS" stars={[1,2,3]}/>
+                            <SkillsContainer skill="DynamoDB" stars={[1,2]}/>
+                            <SkillsContainer skill="GraphQL" stars={[1,2]}/>
                             <SkillsContainer skill="Backbone" stars={[1]}/>
                             <SkillsContainer skill="C++" stars={[1]}/>
                             <SkillsContainer skill="jQuery" stars={[1,2,3,4]}/>
@@ -146,7 +148,16 @@ const Resume = () => {
                         <div className="resume-section">
                             <ResumeHeader title="Experience" />
                             <ResumeRow
-                                line1="CallRail, Atlanta GA" line2="Senior Software Engineer" date="March 2020 - Present"
+                                line1="Veda, Remote" line2="Senior Software Engineer" date="September 2021- Present"
+                                info={`Working as a member of a scrum team using Typescript, Postres and AWS, architected and implemented a dynamic configuration system which would remove the need for most developer implementations on all customer related applications.
+                                <b> Worked as a member of a scrum team to maintain and develop an existing python data massaging / transformation application which handles the parsing, formatting, validation, and enhancement of medical data supplied to us by insurance companies.
+                                <b> Assisted in UI/UX development, handled delivery management, as well as assisted in DevOps related AWS CDK work including work with lambdas, DynamoDB, API Gateway and AppSync.
+                                <b> Mentored junior and mid-level developers and helped with the creation and shaping of a front-end guild for the company.
+                                `}
+                                image={veda}
+                            />
+                            <ResumeRow
+                                line1="CallRail, Atlanta GA" line2="Senior Software Engineer" date="March 2020 - September 2021"
                                 info={` Working as a member of a scrum team to maintain CallRail related billing code in Ruby, Rails, and Angular.
                                 <b> Participate in the mentorship program by helping mentor coworkers in Kubernetes, Angular, and SQL.
                                 <b> Presented on XXS and IDOR attacks and prevention during CallRail security tech talks.
